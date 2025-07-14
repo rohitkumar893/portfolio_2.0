@@ -1,0 +1,17 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  /* background-image: url('bg.jpg');
+  backdrop-filter: blur(200px);
+  background-attachment: fixed;
+  background-position: center 40px;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+@media(max-width:780px){
+  html,body{
+    background-position: -60px -10px;
+  }
+}
