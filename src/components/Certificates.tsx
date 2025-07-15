@@ -2,7 +2,7 @@ import React from 'react'
 
 const Certificates: React.FC = () => {
   return (
-    <div className='certifications flex flex-col justify-center items-center gap-[90px] p-[150px] bg-gray-900 px-[40px] sm:px-[120px]' id="certifications">
+    <div className='certifications flex flex-col  justify-center items-center gap-[90px] p-[150px] bg-gray-800 px-[40px] sm:px-[120px]' id="certifications">
       <h1 className='text-[36px] font-bold text-white'>CERTIFICATIONS :</h1>
 
       <div className='flex flex-col flex-wrap justify-evenly sm:gap-[70px]'>

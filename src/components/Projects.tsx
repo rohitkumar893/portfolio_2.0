@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects:React.FC = () => {
   return (
-    <div className='projectscont bg-black text-white flex justify-center items-center h-auto p-[150px] px-[40px] sm:px-[120px] flex-col w-full' id="projects">
+    <div className='projectscont bg-gray-900 text-white flex justify-center items-center h-auto p-[150px] px-[40px] sm:px-[120px] flex-col w-full' id="projects">
           <h1 className='text-[36px] text-center font-bold'>PROJECTS I'VE WORKED ON :</h1>
           <div className='projects flex flex-col flex-wrap justify-evenly gap-[0px] sm:gap-[70px] text-black mt-[50px]'>
             <a href="https://roomsley.vercel.app/"><div className='mt-[50px] md:ml-[-350px] mb-[40px] rotate-357 h-[280px] w-[360px] sm:h-[300px] sm:w-[400px] flex flex-col justify-between items-center bg-gray-100 rounded-md hover:bg-blue-300'>
