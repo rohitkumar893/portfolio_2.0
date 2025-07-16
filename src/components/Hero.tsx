@@ -20,7 +20,7 @@ const Hero:React.FC = () => {
         </div>
 
         <div className="absolute arrow w-full flex justify-center p-0 left-0 top-[88%]">
-            <img src='arrow.png' className='h-[40px] animate-bounce' />
+            <img src='arrow.png' className='h-[35px] animate-bounce' />
         </div>
 
         
