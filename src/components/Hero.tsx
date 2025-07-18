@@ -3,10 +3,10 @@ import './Hero.css'
 
 const Hero:React.FC = () => {
   return (
-    <div className='h-full w-full text-white flex bg-gray-900 flex-col gap-[20px] justify-center items-start pl-[30px] pr-[30px] sm:pl-[140px] sm:pr-[140px]'>
-        <h1 className='text-[100px] font-semibold'>Rohit</h1>
+    <div className='h-full w-full text-white flex bg-gray-900 flex-col gap-[20px] justify-center items-center md:items-start pl-[30px] pr-[30px] sm:pl-[140px] sm:pr-[140px]' id="home">
+        <h1 className='text-[90px] font-semibold'>Rohit</h1>
         
-        <h4 className='text-[32px] sm:text-[60px] font-semibold mt-[-55px] sm:mt-[-65px]'><span className='software'>Software</span> Developer</h4>
+        <h4 className='text-[32px] md:text-[60px] font-semibold mt-[-55px] sm:mt-[-65px]'><span className='software'>Software</span> Developer</h4>
     
         <div className="links mt-[-12px] text-center">
             <div className="social-links">
