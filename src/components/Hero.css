@@ -64,3 +64,24 @@
   width: 32px;
 }
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .social-btn {
+    width: 68px; /* Original width */
+    border-radius: 10px; /* Reset hover roundness */
+  }
+
+  .social-btn:hover {
+    width: 68px;
+  }
+
+  .social-btn span {
+    width: 0px;
+    padding: 0px;
+  }
+
+  .social-btn:hover span {
+    width: 0px;
+    padding: 0px;
+  }
+}
