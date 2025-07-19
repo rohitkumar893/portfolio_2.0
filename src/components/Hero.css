@@ -67,21 +67,22 @@
 
 @media (hover: none) and (pointer: coarse) {
   .social-btn {
-    width: 68px; /* Original width */
-    border-radius: 10px; /* Reset hover roundness */
+    width: 68px !important;
+    border-radius: 10px !important;
   }
 
   .social-btn:hover {
-    width: 68px;
+    width: 68px !important;
+    border-radius: 10px !important;
   }
 
   .social-btn span {
-    width: 0px;
-    padding: 0px;
+    width: 0px !important;
+    padding: 0px !important;
   }
 
   .social-btn:hover span {
-    width: 0px;
-    padding: 0px;
+    width: 0px !important;
+    padding: 0px !important;
   }
 }
