@@ -6,7 +6,7 @@ import React from 'react';
         className="skills text-[40px] w-full bg-gray-800 p-[110px] px-[40px] sm:px-[120px] flex flex-col gap-[40px]"
         id="skills"
       >
-        <h1 className="text-center text-[36px] font-bold">MY TECH STACK :</h1>
+        <h1 className="text-center text-[32px] sm:text-[36px] font-bold">MY TECH STACK :</h1>
 
         {/* LANGUAGES */}
         <div className="languages">
