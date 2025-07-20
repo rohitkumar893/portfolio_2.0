@@ -36,7 +36,7 @@ const Hero:React.FC = () => {
         
         </div>
         <div className="div">
-          <p className='text-[20px] text-justify'>A postgraduate in Computer Applications (MCA) with a strong passion for programming and a deep curiosity for exploring new and emerging technologies. Fueled by a passion for constant growth and innovation, I am always looking to level up my skills, embrace cutting-edge trends, and stay ahead in the ever-evolving tech world.</p>
+          <p className='text-[20px] text-justify hyphens-auto'>A postgraduate in Computer Applications (MCA) with a strong passion for programming and a deep curiosity for exploring new and emerging technologies. Fueled by a passion for constant growth and innovation, I am always looking to level up my skills, embrace cutting-edge trends, and stay ahead in the ever-evolving tech world.</p>
         </div>
     </div>
   )
