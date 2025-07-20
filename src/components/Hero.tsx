@@ -4,9 +4,9 @@ import './Hero.css'
 const Hero:React.FC = () => {
   return (
     <div className='h-full w-full text-white flex bg-gray-900 flex-col gap-[30px] justify-center items-center md:items-start pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
-        <h1 className='text-[75px] sm:text-[90px] font-semibold'>Rohit</h1>
+        <h1 className='rohit text-[75px] sm:text-[90px] font-semibold'>Rohit</h1>
         
-        <h4 className='text-[32px] md:text-[60px] font-semibold mt-[-55px] sm:mt-[-65px]'><span className='software'>Software</span> Developer</h4>
+        <h4 className='sdv text-[32px] md:text-[60px] font-semibold mt-[-55px] sm:mt-[-65px]'><span className='software'>Software</span> Developer</h4>
     
         <div className="links mt-[-14px] text-center">
           <div className="social-links">
@@ -32,9 +32,8 @@ const Hero:React.FC = () => {
         <div className="absolute arrow w-full flex justify-center p-0 left-0 top-[90%]">
             <img src='arrow.png' className='h-[28px] md:h-[35px] animate-bounce' />
         </div>
-
-        
         </div>
+        
         <div className="div">
           <p className='text-[20px] text-justify hyphens-auto'>A postgraduate in Computer Applications (MCA) with a strong passion for programming and a deep curiosity for exploring new and emerging technologies. Fueled by a passion for constant growth and innovation, I am always looking to level up my skills, embrace cutting-edge trends, and stay ahead in the ever-evolving tech world.</p>
         </div>

@@ -8,6 +8,22 @@
   align-items: center;
 }
 
+.rohit{
+  opacity:0;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.sdv{
+  opacity:0;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
 .social-btn {
   cursor: pointer;
   height: 68px;
@@ -50,6 +66,17 @@
 
 #github {
   fill: #333;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
 
 @media(max-width:780px){
