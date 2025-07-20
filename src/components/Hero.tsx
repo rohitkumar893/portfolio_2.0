@@ -3,22 +3,13 @@ import './Hero.css'
 
 const Hero:React.FC = () => {
   return (
-    <div className='h-full w-full text-white flex bg-gray-900 flex-col gap-[30px] justify-center items-center md:items-start pl-[38px] pr-[38px] sm:pl-[140px] sm:pr-[140px]' id="home">
+    <div className='h-full w-full text-white flex bg-gray-900 flex-col gap-[30px] justify-center items-center md:items-start pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
         <h1 className='text-[75px] sm:text-[90px] font-semibold'>Rohit</h1>
         
         <h4 className='text-[32px] md:text-[60px] font-semibold mt-[-55px] sm:mt-[-65px]'><span className='software'>Software</span> Developer</h4>
     
         <div className="links mt-[-14px] text-center">
           <div className="social-links">
-              <a href="https://www.linkedin.com/in/rohitkumar893/" target="_blank" rel="noopener noreferrer">
-                <div id="linkedin" className="social-btn flex-center">
-                  <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
-                  </svg>
-                  <span>LinkedIn</span>
-                </div>
-              </a>
-
               <a href="https://github.com/rohitkumar893" target="_blank" rel="noopener noreferrer">
                 <div id="github" className="social-btn flex-center">
                   <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -27,6 +18,15 @@ const Hero:React.FC = () => {
                   <span>GitHub</span>
                 </div>
               </a>
+
+              <a href="https://www.linkedin.com/in/rohitkumar893/" target="_blank" rel="noopener noreferrer">
+                <div id="linkedin" className="social-btn flex-center">
+                  <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                  </svg>
+                  <span>LinkedIn</span>
+                </div>
+              </a>       
             </div>
 
         <div className="absolute arrow w-full flex justify-center p-0 left-0 top-[90%]">
