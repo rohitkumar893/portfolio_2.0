@@ -3,7 +3,7 @@ import './Hero.css'
 
 const Hero:React.FC = () => {
   return (
-    <div className='h-full w-full text-white flex bg-gray-900 flex-col gap-[30px] justify-center items-center md:items-start pl-[30px] pr-[30px] sm:pl-[140px] sm:pr-[140px]' id="home">
+    <div className='h-full w-full text-white flex bg-gray-900 flex-col gap-[30px] justify-center items-center md:items-start pl-[38px] pr-[38px] sm:pl-[140px] sm:pr-[140px]' id="home">
         <h1 className='text-[75px] sm:text-[90px] font-semibold'>Rohit</h1>
         
         <h4 className='text-[32px] md:text-[60px] font-semibold mt-[-55px] sm:mt-[-65px]'><span className='software'>Software</span> Developer</h4>
