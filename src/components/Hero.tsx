@@ -30,7 +30,7 @@ const Hero:React.FC = () => {
             </div>
 
         <div className="absolute arrow w-full flex justify-center p-0 left-0 top-[90%]">
-            <img src='arrow.png' className='h-[28px] md:h-[35px] animate-bounce' />
+            <a href="#skills"><img src='arrow.png' className='h-[28px] md:h-[35px] animate-bounce' /></a>
         </div>
         </div>
         
