@@ -18,7 +18,7 @@ import React from 'react';
           </div>
 
           <div className="flex justify-center items-center gap-4 mt-[20px]">
-            <img src="javascript.png" className="h-[36px]" alt="JavaScript Logo" />
+            <img src="javascript.png" className="h-[38px]" alt="JavaScript Logo" />
             <h3 className="text-[28px]">JAVASCRIPT</h3>
           </div>
 
@@ -38,7 +38,7 @@ import React from 'react';
           <h3 className="text-center text-[32px] mt-[20px]"><b>TECHNOLOGIES :</b></h3>
 
           <div className="flex justify-center items-center gap-4 mt-[20px]">
-            <img src="react.png" className="h-[36px]" alt="React Logo" />
+            <img src="react.png" className="h-[38px]" alt="React Logo" />
             <h3 className="text-[28px]">REACT</h3>
           </div>
 
