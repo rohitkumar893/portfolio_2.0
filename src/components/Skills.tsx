@@ -10,7 +10,7 @@ import React from 'react';
 
         {/* LANGUAGES */}
         <div className="languages">
-          <h3 className="text-center text-[32px] mt-[20px]">LANGUAGES :</h3>
+          <h3 className="text-center text-[32px] mt-[20px]"><b>LANGUAGES :</b></h3>
 
           <div className="flex justify-center items-center gap-4 mt-[20px]">
             <img src="typescript.png" className="h-[36px]" alt="TypeScript Logo" />
@@ -35,7 +35,7 @@ import React from 'react';
 
         {/* TECHNOLOGIES */}
         <div className="technologies">
-          <h3 className="text-center text-[32px] mt-[20px]">TECHNOLOGIES :</h3>
+          <h3 className="text-center text-[32px] mt-[20px]"><b>TECHNOLOGIES :</b></h3>
 
           <div className="flex justify-center items-center gap-4 mt-[20px]">
             <img src="react.png" className="h-[36px]" alt="React Logo" />
