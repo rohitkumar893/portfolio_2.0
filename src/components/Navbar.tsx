@@ -18,11 +18,11 @@ const Navbar:React.FC = () => {
         
         {/* Desktop Menu */}
         <div className='hidden md:flex gap-[65px] justify-center items-center w-full text-[20px]'>
-          <a href="#home"><h1>HOME</h1></a>
-          <a href="#skills"><h1>SKILLS</h1></a>
-          <a href="#projects"><h1>PROJECTS</h1></a>
-          <a href="#certifications"><h1>CERTIFICATES</h1></a>
-          <a href="#contact"><h1>CONTACT</h1></a>
+          <a href="#home" className="hover:text-sky-500 transition-colors duration-200"><h1>HOME</h1></a>
+          <a href="#skills" className="hover:text-sky-500 transition-colors duration-200"><h1>SKILLS</h1></a>
+          <a href="#projects" className="hover:text-sky-500 transition-colors duration-200"><h1>PROJECTS</h1></a>
+          <a href="#certifications" className="hover:text-sky-500 transition-colors duration-200"><h1>CERTIFICATES</h1></a>
+          <a href="#contact" className="hover:text-sky-500 transition-colors duration-200"><h1>CONTACT</h1></a>
         </div>
 
         {/* Mobile Menu */}
