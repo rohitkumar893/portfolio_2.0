@@ -6,7 +6,7 @@ const Hero:React.FC = () => {
     <div className='h-full w-full text-white flex bg-gray-900 flex-col gap-[30px] justify-center items-center md:items-start pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
         <h1 className='rohit text-[75px] select-none sm:text-[90px] font-semibold'>Rohit</h1>
         
-        <h4 className='sdv text-[32px] md:text-[60px] select-none font-semibold mt-[-55px] sm:mt-[-65px]'><span className='software'>Software</span> Developer</h4>
+        <h4 className='sdv text-[32px] md:text-[60px] select-none font-semibold mt-[-50px] sm:mt-[-65px]'><span className='software'>Software</span> Developer</h4>
     
         <div className="links mt-[-14px] text-center">
           <div className="social-links">

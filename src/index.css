@@ -7,7 +7,7 @@ html, body, #root{
   font-optical-sizing: auto;
   color: white;
   scroll-behavior: smooth;
-  cursor: url('../public/pointer 1.png'), auto;
+  cursor: url('../public/pointer 3.png'), auto;
 }
 
 ::-webkit-scrollbar {
