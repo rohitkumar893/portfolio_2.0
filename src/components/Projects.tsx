@@ -8,13 +8,13 @@ const Projects:React.FC = () => {
             <a href="https://roomsley.vercel.app/"><div className='mt-[50px] md:ml-[-350px] mb-[40px] rotate-0 sm:rotate-357 h-[290px] w-[340px] sm:h-[330px] sm:w-[400px] flex flex-col justify-between items-center bg-gray-100 rounded-md hover:bg-blue-300'>
               <img src="roomsley.png" className='w-full shadow-sm'></img>
               <h1 className='text-[20px] p-[18px]'>Roomsley</h1>
-              <p className='mb-[20px] mt-[-8px] text-gray-600 text-[16px] sm:text-[18px]'>'Room listing web app'</p>
+              <p className='mb-[20px] mt-[-8px] text-gray-600 text-[15px] sm:text-[18px]'>'Room listing web app'</p>
             </div></a>
 
             <a href=""><div className='mt-[50px] md:mr-[-350px] mb-[40px] rotate:0 sm:rotate-3 h-[290px] w-[340px] sm:h-[330px] sm:w-[400px] flex flex-col justify-between items-center bg-gray-100 rounded-md hover:bg-blue-300'>
               <img src="portf.png" className='w-[full] shadow-sm'></img>
               <h1 className='text-[20px] p-[18px]' id="portfolio">Portfolio</h1>
-              <p className='mb-[20px] mt-[-8px] text-gray-600 text-[16px] sm:text-[18px]'>'Personal developer portfolio'</p>
+              <p className='mb-[20px] mt-[-8px] text-gray-600 text-[15px] sm:text-[18px]'>'Personal developer portfolio'</p>
             </div></a>
             </div>
           </div>
