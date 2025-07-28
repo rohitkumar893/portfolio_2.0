@@ -1,6 +1,7 @@
 import React from "react"
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react';
+import './Navbar.css'
 
 const Navbar:React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,7 @@ const Navbar:React.FC = () => {
 
 
   return (
-    <div className="fixed top-0 left-0 h-16 sm:h-20 w-full bg-gray-700 flex justify-start items-center gap-25 text-lg font-medium text-white z-3">
+    <div className="navbar fixed top-0 left-0 h-16 sm:h-20 w-full bg-gray-700 flex justify-start items-center gap-25 text-lg font-medium text-white z-3">
       {/* Hamburger */}
         <div className='md:hidden ml-[24px] mt-[8px] z-[5] relative'>
           <button onClick={() => setIsOpen(!isOpen)}>

@@ -4,11 +4,11 @@ import './Hero.css'
 const Hero:React.FC = () => {
   return (
     <div className='h-full w-full text-white flex bg-gray-900 flex-col gap-[30px] justify-center items-center md:items-start pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
-        <h1 className='rohit text-[75px] select-none sm:text-[90px] font-semibold'>Rohit</h1>
+        <h1 className='rohit text-[72px] select-none sm:text-[84px] font-semibold'>Rohit</h1>
         
-        <h4 className='sdv text-[32px] md:text-[60px] select-none font-semibold mt-[-50px] sm:mt-[-65px]'><span className='software'>Software</span> Developer</h4>
+        <h4 className='sdv text-[32px] md:text-[56px] select-none font-semibold mt-[-50px] sm:mt-[-62px]'><span className='software'>Software</span> Developer</h4>
     
-        <div className="links mt-[-14px] text-center">
+        <div className="links mt-[-16px] text-center">
           <div className="social-links">
               <a href="https://github.com/rohitkumar893" target="_blank" rel="noopener noreferrer">
                 <div id="github" className="social-btn flex-center">
@@ -30,12 +30,12 @@ const Hero:React.FC = () => {
             </div>
 
         <div className="absolute arrow w-full flex justify-center p-0 left-0 top-[90%]">
-            <a href="#skills"><img src='arrow.png' className='h-[28px] md:h-[35px] animate-bounce' /></a>
+            <a href="#projects"><img src='arrow.png' className='h-[28px] md:h-[32px] animate-bounce' /></a>
         </div>
         </div>
         
-        <div className="div">
-          <p className='text-[20px] text-justify select-none hyphens-auto'>A postgraduate in Computer Applications (MCA) with a strong passion for programming and a deep curiosity for exploring new and emerging technologies. Fueled by a passion for constant growth and innovation, I am always looking to level up my skills, embrace cutting-edge trends, and stay ahead in the ever-evolving tech world.</p>
+        <div className="div mt-[22px]">
+          <p className='summary text-[20px] text-justify select-none hyphens-auto'>A postgraduate in MCA with a strong passion for programming and a deep curiosity for exploring new and emerging technologies. Fueled by a passion for constant growth and innovation, I am always looking to level up my skills, embrace cutting-edge trends, and stay ahead in the ever-evolving tech world.</p>
         </div>
     </div>
   )
