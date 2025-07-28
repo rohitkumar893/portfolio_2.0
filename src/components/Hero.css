@@ -20,7 +20,31 @@
   opacity:0;
   animation-name: slideIn;
   animation-duration: 2s;
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.social-links{
+  opacity:0;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.summary{
+  opacity:0;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.arrow{
+  opacity:0;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
 
@@ -70,7 +94,7 @@
 
 @keyframes slideIn {
   from {
-      transform: translateY(-50px);
+      transform: translateY(50px);
       opacity: 0;
   }
   to {

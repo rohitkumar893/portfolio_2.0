@@ -1,0 +1,25 @@
+.navbar{
+  opacity:0;
+  animation-name: slideInTwo;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInTwo {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@media(max-width:780px){
+    .navbar{
+        opacity:1;
+        animation: none;
+    }
+}
