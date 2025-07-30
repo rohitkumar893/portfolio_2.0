@@ -2,26 +2,29 @@ import React from 'react'
 
 const Certificates: React.FC = () => {
   return (
-    <div className='certifications flex flex-col  justify-center items-center gap-[90px] p-[150px] bg-gray-800 px-[40px] sm:px-[120px]' id="certifications">
+  <div className='certifications flex flex-col justify-center items-center gap-[90px] py-[150px] px-[40px] sm:px-[120px] bg-gray-800'
+      id="certifications"
+    >
       <h1 className='text-[32px] sm:text-[36px] font-bold text-white'>CERTIFICATIONS :</h1>
 
-      <div className='flex flex-col flex-wrap justify-evenly sm:gap-[70px]'>
-        
-        <a href='https://www.coursera.org/account/accomplishments/verify/LFQ94ZUI1Q7K'>
-          <div className='mt-[50px] md:ml-[-350px] mb-[40px] rotate-0 sm:rotate-357 sm:hover:rotate-360 transition h-[260px] w-[340px] sm:h-[300px] sm:w-[400px] flex items-center justify-center bg-gray-100 rounded-md hover:bg-blue-300 overflow-hidden'>
-            <img src='microsoft.jpg' className='w-full h-full object-cover shadow-sm' />
+      <div className='flex flex-wrap justify-center gap-10'>
+        {/* Microsoft Certificate */}
+        <a href='https://www.coursera.org/account/accomplishments/verify/LFQ94ZUI1Q7K' target='_blank' rel='noopener noreferrer'>
+          <div className='mb-[40px] sm:hover:rotate-2 transition h-[260px] w-[340px] sm:h-[280px] sm:w-[380px] flex items-center justify-center bg-gray-100 rounded-md hover:bg-blue-300 overflow-hidden'>
+            <img src='microsoft.jpg' className='w-full h-full object-cover shadow-sm' alt="Microsoft Certification" />
           </div>
         </a>
 
-        <a href='https://www.coursera.org/account/accomplishments/verify/2FGSN01B5TS3'>
-          <div className='mt-[50px] md:mr-[-350px] mb-[40px] rotate-0 sm:rotate-3 sm:hover:rotate-0 transition h-[260px] w-[340px] sm:h-[300px] sm:w-[400px] flex items-center justify-center bg-gray-100 rounded-md hover:bg-blue-300 overflow-hidden'>
-            <img src='meta.jpg' className='w-full h-full object-cover shadow-sm' />
+        {/* Meta Certificate */}
+        <a href='https://www.coursera.org/account/accomplishments/verify/2FGSN01B5TS3' target='_blank' rel='noopener noreferrer'>
+          <div className='mb-[40px] sm:hover:rotate-2 transition h-[260px] w-[340px] sm:h-[280px] sm:w-[380px] flex items-center justify-center bg-gray-100 rounded-md hover:bg-blue-300 overflow-hidden'>
+            <img src='meta.jpg' className='w-full h-full object-cover shadow-sm' alt="Meta Certification" />
           </div>
         </a>
-
       </div>
     </div>
-  )
+  );
+
 }
 
 export default Certificates
