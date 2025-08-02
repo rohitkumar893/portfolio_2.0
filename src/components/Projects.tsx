@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
         {/* Project 1 */}
         <a href="https://roomsley.vercel.app/">
           <div className='mb-[40px] sm:hover:rotate-2 transition h-[290px] w-[340px] sm:h-[280px] sm:w-[340px] flex flex-col justify-between items-center bg-gray-100 rounded-md hover:bg-blue-200 text-black'>
-            <img src="roomsley.png" className='w-full shadow-sm rounded-t-md' alt="Roomsley" />
+            <img src="roomsley.png" className='w-full shadow-lg rounded-t-md' alt="Roomsley" />
             <h1 className='text-[20px] p-[18px] text-gray-700 font-medium'>Roomsley</h1>
             <p className='mb-[20px] mt-[-18px] text-gray-600 text-[16px] sm:text-[18px]'>
               'Room listing web-app'
@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
         {/* Project 2 */}
         <a href="https://github.com/rohitkumar893/quiqresume">
           <div className='mb-[40px] sm:hover:rotate-2 transition h-[290px] w-[340px] sm:h-[280px] sm:w-[340px] flex flex-col justify-between items-center bg-gray-100 rounded-md hover:bg-blue-200 text-black'>
-            <img src="quiq.png" className='w-full shadow-sm rounded-t-md' alt="Resume Builder" />
+            <img src="quiq.png" className='w-full shadow-lg rounded-t-md' alt="Resume Builder" />
             <h1 className='text-[20px] p-[18px] text-gray-700 font-medium'>QuiqResume</h1>
             <p className='mb-[20px] mt-[-18px] text-gray-600 text-[16px] sm:text-[18px]'>
               'Generate your resume'
@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
         {/* Project 3 */}
         <a href="/">
           <div className='mb-[40px] sm:hover:rotate-2 transition h-[290px] w-[340px] sm:h-[280px] sm:w-[340px] flex flex-col justify-between items-center bg-gray-100 rounded-md hover:bg-blue-200 text-black'>
-            <img src="portf.png" className='w-full shadow-sm rounded-t-md' alt="Portfolio" />
+            <img src="portf.png" className='w-full shadow-lg rounded-t-md' alt="Portfolio" />
             <h1 className='text-[20px] p-[18px] text-gray-700 font-medium' id="portfolio">Portfolio</h1>
             <p className='mb-[20px] mt-[-18px] text-gray-600 text-[16px] sm:text-[18px]'>
               'This very portfolio'
