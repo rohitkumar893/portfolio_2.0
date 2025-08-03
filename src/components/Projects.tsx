@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
             <img src="portf.png" className='w-full shadow-sm rounded-t-md' alt="Portfolio" />
             <h1 className='text-[20px] p-[18px] text-gray-700 font-medium' id="portfolio">Portfolio</h1>
             <p className='mb-[20px] mt-[-18px] text-gray-600 text-[16px] sm:text-[18px]'>
-              'This very portfolio'
+              'This personal portfolio'
             </p>
           </div>
         </a>   
