@@ -5,7 +5,7 @@ const Hero:React.FC = () => {
   return (
     <div className='hero h-full w-full text-white flex bg-gray-900 flex-col gap-[30px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
       <div className="div mt-[22px]">
-          <p className='summary text-center text-[45px] md:text-[70px] select-none font-medium leading-tight'>I turn ideas into <br></br> <span className='fancytext'>working solutions</span> through code</p>
+          <p className='summary text-center text-[48px] md:text-[70px] select-none font-medium leading-tight'>I turn ideas into <br></br> <span className='fancytext'>working solutions</span> through code</p>
         </div>
     
         <div className="links mt-[25px] text-center">
