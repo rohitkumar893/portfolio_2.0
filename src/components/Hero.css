@@ -41,8 +41,7 @@
 
 .fancytext{
   font-family: 'NyghtSerif';
-  src: url('./assets/fonts/NyghtSerif-Medium.otf') format('opentype');
-  font-weight: large;
+  src: url('/assets/fonts/NyghtSerif-Medium.otf') format('opentype');
   font-style: italic;
   color:silver
 }
