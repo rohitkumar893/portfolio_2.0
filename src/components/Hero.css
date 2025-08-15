@@ -1,3 +1,10 @@
+.hero{
+  background-image: url('bg2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .software{
   color:#2ea6dd;
 }
@@ -30,6 +37,14 @@
   animation-duration: 2s;
   animation-delay: 0.4s;
   animation-fill-mode: forwards;
+}
+
+.fancytext{
+  font-family: 'NyghtSerif';
+  src: url('./assets/fonts/NyghtSerif-Medium.otf') format('opentype');
+  font-weight: large;
+  font-style: italic;
+  color:silver
 }
 
 .summary{

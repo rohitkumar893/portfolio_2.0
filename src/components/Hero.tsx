@@ -3,12 +3,12 @@ import './Hero.css'
 
 const Hero:React.FC = () => {
   return (
-    <div className='h-full w-full text-white flex bg-gray-900 flex-col gap-[30px] justify-center items-center md:items-start pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
-        <h1 className='rohit text-[72px] select-none sm:text-[84px] font-semibold'>Rohit</h1>
-        
-        <h4 className='sdv text-[32px] md:text-[56px] select-none font-semibold mt-[-50px] sm:mt-[-62px]'><span className='software'>Software</span> Developer</h4>
+    <div className='hero h-full w-full text-white flex bg-gray-900 flex-col gap-[30px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
+      <div className="div mt-[22px]">
+          <p className='summary text-center text-[50px] md:text-[70px] select-none font-medium leading-tight'>I turn ideas into <br></br> <span className='fancytext'>working solutions</span> through code</p>
+        </div>
     
-        <div className="links mt-[-16px] text-center">
+        <div className="links mt-[25px] text-center">
           <div className="social-links">
               <a href="https://github.com/rohitkumar893" target="_blank" rel="noopener noreferrer">
                 <div id="github" className="social-btn flex-center">
@@ -34,9 +34,7 @@ const Hero:React.FC = () => {
         </div>
         </div>
         
-        <div className="div mt-[22px]">
-          <p className='summary text-[20px] text-justify select-none hyphens-auto'>A postgraduate in MCA with a strong passion for programming and a deep curiosity for exploring new and emerging technologies. Fueled by a passion for constant growth and innovation, I am always looking to level up my skills, embrace cutting-edge trends, and stay ahead in the ever-evolving tech world.</p>
-        </div>
+        
     </div>
   )
 }
