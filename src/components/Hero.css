@@ -39,11 +39,18 @@
   animation-fill-mode: forwards;
 }
 
-.fancytext{
+@font-face {
   font-family: 'NyghtSerif';
   src: url('/assets/fonts/NyghtSerif-Medium.otf') format('opentype');
+  font-weight: 500;
   font-style: italic;
-  color:silver
+}
+
+.fancytext {
+  font-family: 'NyghtSerif', serif; 
+  font-weight: 500;                
+  font-style: italic;              
+  color: silver;
 }
 
 .summary{
