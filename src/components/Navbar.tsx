@@ -9,10 +9,10 @@ const Navbar:React.FC = () => {
 
 
   return (
-    <div className="navbar fixed top-0 left-0 h-16 bg-gray-900/75 backdrop-blur-md sm:h-22 w-full flex justify-between px-[20px] md:px-[25px] md:justify-around items-center text-lg font-medium text-white z-3">
+    <div className="navbar fixed select-none top-0 left-0 h-16 bg-gray-900/75 backdrop-blur-md sm:h-22 w-full flex justify-between px-[20px] md:px-[25px] md:justify-around items-center text-lg font-medium text-white z-3">
       <div className="name flex justify-center items-center gap-[8px] md:gap-[10px]">
         <img src='profile.png' className="md:h-[28px] md:w-[28px] h-[24px] w-[24px]"></img>
-        <h1 className="text-[31px] text-gray-200 md:text-[38px] font-medium md:ml-0">Rohit</h1>
+        <h1 className="rohittext text-[31px] text-gray-200 md:text-[38px] font-medium md:ml-0">Rohit</h1>
       </div>
       {/* Hamburger */}
         <div className='md:hidden mt-[8px] z-[5] relative'>
