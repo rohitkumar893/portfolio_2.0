@@ -23,7 +23,7 @@ const Navbar:React.FC = () => {
         
         {/* Desktop Menu */}
         
-        <div className='hidden md:flex gap-[34px] bg-gray-700 justify-center items-center w-[635px] h-[50px] rounded-3xl text-[20px]'>
+        <div className='hidden md:flex gap-[34px] bg-gray-700 justify-center items-center w-[635px] h-[46px] rounded-3xl text-[20px]'>
           <a href="#home" className="hover:text-sky-500 transition-colors duration-200"><h1>HOME</h1></a>
           <a href="#projects" className="hover:text-sky-500 transition-colors duration-200"><h1>PROJECTS</h1></a>
           <a href="#skills" className="hover:text-sky-500 transition-colors duration-200"><h1>SKILLS</h1></a>
