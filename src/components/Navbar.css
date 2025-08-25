@@ -17,10 +17,6 @@
   }
 }
 
-.rohittext:hover{
-  font-style:italic;
-}
-
 @media(max-width:780px){
     .navbar{
         opacity:1;
