@@ -128,10 +128,17 @@
 }
 
 @media(max-width:780px){
-  .social-btn {
-  cursor: pointer;
-  height: 58px;
-  width: 58px;
+    .social-btn {
+    width: 58px !important;
+    height: 58px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 10px !important;
+  }
+
+  .social-btn:hover {
+    width: 58px !important; /* prevent expansion */
   }
 
   .social-btn svg {
