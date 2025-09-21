@@ -33,8 +33,6 @@ const Hero:React.FC = () => {
             <a href="#projects"><img src='arrow.png' className='h-[28px] md:h-[32px] animate-bounce' /></a>
         </div>
         </div>
-        
-        
     </div>
   )
 }
