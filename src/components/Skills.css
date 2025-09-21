@@ -7,6 +7,26 @@
   }
 }
 
+.ts{
+  color:#4089d7;
+}
+
+.re{
+  color:#00D8FF;
+}
+
+.tw{
+  color:#35BEF8;
+}
+
+.njs{
+  color:#529F41;
+}
+
+.js{
+  color:#F4E11E;
+}
+
 .spin:hover .logo{
     animation-name: spin-horizontal;
     animation-duration: 1s;

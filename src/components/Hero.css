@@ -1,9 +1,9 @@
-.hero{
+/* .hero{
   background-image: url('/public/bg2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 .social-links,.flex-center {
   display: flex;
