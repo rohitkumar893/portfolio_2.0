@@ -4,7 +4,7 @@ const Projects: React.FC = () => {
   return (
     <div
       className='projectscont bg-gray-800 text-white flex justify-center items-center h-auto py-[150px] px-[40px] sm:px-[120px] flex-col w-[full]' id="projects">
-      <h1 className='text-[32px] sm:text-[36px] text-center font-bold'>PROJECTS :</h1>
+      <h1 className='text-[32px] sm:text-[36px] text-center font-bold'>/ PROJECTS :</h1>
 
       <div className='projects flex flex-wrap justify-center gap-10 mt-[50px] sm:w-[80%]'>
 
@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
             <img src="notespark.png" className='w-full shadow-sm rounded-t-md' alt="Resume Builder" />
             <h1 className='text-[20px] p-[18px] text-gray-700 font-medium'>NoteSpark</h1>
             <p className='mb-[20px] mt-[-18px] text-gray-600 text-[16px] sm:text-[18px]'>
-              'Reliable note app'
+              'Notes App for daily notes'
             </p>
           </div>
         </a>
