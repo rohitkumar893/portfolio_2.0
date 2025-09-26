@@ -7,24 +7,9 @@
   }
 }
 
-.ts{
-  color:#4089d7;
-}
 
-.re{
-  color:#00D8FF;
-}
-
-.tw{
-  color:#35BEF8;
-}
-
-.njs{
-  color:#529F41;
-}
-
-.js{
-  color:#F4E11E;
+.spin{
+  background-color: rgba(54, 54, 54, 0.582);
 }
 
 .spin:hover .logo{

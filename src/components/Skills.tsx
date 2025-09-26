@@ -10,38 +10,43 @@ import './Skills.css'
         <h1 className="text-center text-[32px] sm:text-[36px] font-bold">/ MY TECH STACK :</h1>
 
         {/* TECHNOLOGIES */}
-        <div className="technologies flex flex-col gap-1">
-          <div className="spin flex justify-center items-center gap-4 mt-[20px] hover:scale-104 transition-transform">
-            <img src="typescript.png" className="logo h-[48px]" alt="TypeScript Logo" />
-            <h3 className="ts text-[30px]">TYPESCRIPT</h3>
+        <div className="technologies grid grid-cols-3 justify-items-center gap-5 w-[420px] mx-auto">
+          <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
+            <img src="typescript.png" className="logo h-[50px]" alt="TypeScript Logo" />
+            <h3 className="ts text-[17px]">TYPESCRIPT</h3>
           </div>
 
-          <div className="spin flex justify-center items-center gap-4 mt-[20px] hover:scale-104 transition-transform">
+          <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
             <img src="javascript.png" className="logo h-[52px]" alt="JavaScript Logo" />
-            <h3 className="js text-[30px]">JAVASCRIPT</h3>
+            <h3 className="js text-[17px]">JAVASCRIPT</h3>
           </div>
 
-          <div className="spin flex justify-center items-center gap-4 mt-[20px] hover:scale-104 transition-transform">
+          <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
             <img src="react.png" className="logo h-[50px]" alt="React Logo" />
-            <h3 className="re text-[30px]">REACT</h3>
+            <h3 className="re text-[17px]">REACT</h3>
           </div>
 
-          <div className="spin flex justify-center items-center gap-4 mt-[20px] hover:scale-104 transition-transform">
+          <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
             <img src="Tailwind Logo.png" className="logo tw w-[52px]" alt="Tailwind Logo" />
-            <h3 className="tw text-[30px]">TAILWIND CSS</h3>
+            <h3 className="tw text-[17px]">TAILWIND</h3>
           </div>
 
-          <div className="spin flex justify-center items-center gap-4 mt-[20px] hover:scale-104 transition-transform">
+          <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
             <img src="nod.png" className="logo h-[48px] mt-1" alt="Node.js Logo" />
-            <h3 className="njs text-[30px]">NODE JS</h3>
+            <h3 className="njs text-[17px]">NODE JS</h3>
           </div>
 
-          <div className="spin flex justify-center items-center gap-4 mt-[20px] hover:scale-104 transition-transform">
+          <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
+            <img src="sql.png" className="logo h-[48px] mt-1" alt="SQL Logo" />
+            <h3 className="njs text-[17px]">SQL</h3>
+          </div>
+
+          <div className="spin flex flex-col bg-white w-[120px] rounded-xl col-span-3 h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
             <img src="exp.png" className="logo h-[48px]" alt="Express Logo" />
-            <h3 className="text-[30px] text-shadow-white">EXPRESS JS</h3>
+            <h3 className="text-[17px] text-shadow-white">EXPRESS JS</h3>
           </div>
         </div>
-      </div>
+        </div>
     );
   };
 
