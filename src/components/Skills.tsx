@@ -11,7 +11,7 @@ import './Skills.css'
 
         {/* TECHNOLOGIES */}
         <div className="technologies grid grid-cols-3 justify-items-center gap-5 w-[420px] mx-auto">
-          <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
+          <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-3 mt-[20px] hover:scale-104 transition-transform">
             <img src="typescript.png" className="logo h-[50px]" alt="TypeScript Logo" />
             <h3 className="ts text-[17px]">TYPESCRIPT</h3>
           </div>
@@ -26,7 +26,7 @@ import './Skills.css'
             <h3 className="re text-[17px]">REACT</h3>
           </div>
 
-          <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
+          <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-4 mt-[20px] hover:scale-104 transition-transform">
             <img src="Tailwind Logo.png" className="logo tw w-[52px]" alt="Tailwind Logo" />
             <h3 className="tw text-[17px]">TAILWIND</h3>
           </div>
