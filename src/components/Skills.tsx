@@ -3,8 +3,8 @@ import './Skills.css'
 
   const Skills: React.FC = () => {
     return (
-      <div
-        className="skills text-[40px] select-none w-full bg-gray-900 p-[110px] px-[40px] sm:px-[120px] flex flex-col gap-[40px]"
+      <section
+        className="skills text-[40px] select-none w-full bg-gradient-to-r from-gray-900 to-gray-600 p-[110px] px-[40px] sm:px-[120px] flex flex-col gap-[40px]"
         id="skills"
       >
         <h1 className="text-center text-[32px] sm:text-[36px] font-bold">/ MY TECH STACK :</h1>
@@ -46,7 +46,7 @@ import './Skills.css'
             <h3 className="text-[17px] text-shadow-white">EXPRESS JS</h3>
           </div>
         </div>
-        </div>
+        </section>
     );
   };
 

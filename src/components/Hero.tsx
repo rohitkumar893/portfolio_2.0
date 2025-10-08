@@ -3,7 +3,7 @@ import './Hero.css'
 
 const Hero:React.FC = () => {
   return (
-    <div className='hero h-full w-full text-white flex bg-gray-900 flex-col gap-[90px] md:gap-[45px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
+    <section className='hero h-full w-full text-white flex bg-gradient-to-r from-gray-900 to-gray-600 flex-col gap-[90px] md:gap-[45px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
       <div className="div mt-[22px]">
           <p className='summary text-center text-[44px] sm:text-[52px] md:text-[70px] select-none font-medium leading-tight'>I turn <span className='fancytext whitespace-nowrap'> ideas </span> into <br></br> <span className='fancytext whitespace-nowrap'>working solutions</span> through code.</p>
         </div>
@@ -33,7 +33,7 @@ const Hero:React.FC = () => {
             <a href="#projects"><img src='arrow.png' className='h-[28px] md:h-[32px] animate-bounce' /></a>
         </div>
         </div>
-    </div>
+    </section>
   )
 }
 

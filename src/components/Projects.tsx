@@ -2,8 +2,8 @@ import React from 'react';
 
 const Projects: React.FC = () => {
   return (
-    <div
-      className='projectscont bg-gray-800 text-white flex justify-center items-center h-auto py-[150px] px-[40px] sm:px-[120px] flex-col w-[full]' id="projects">
+    <section
+      className='projectscont bg-gradient-to-r from-gray-600 to-gray-900 text-white flex justify-center items-center h-auto py-[150px] px-[40px] sm:px-[120px] flex-col w-[full]' id="projects">
       <h1 className='text-[32px] sm:text-[36px] text-center font-bold'>/ PROJECTS :</h1>
 
       <div className='projects flex flex-wrap justify-center gap-10 mt-[50px] sm:w-[80%]'>
@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
           </div>
         </a>   
       </div>
-    </div>
+    </section>
   );
 };
 
