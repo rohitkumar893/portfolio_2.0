@@ -39,6 +39,7 @@
   font-weight: 500;                
   font-style: italic;              
   color: #70afe3;
+  text-shadow: #1f1f1f 1px 1px 2px;
 }
 
 .summary{
