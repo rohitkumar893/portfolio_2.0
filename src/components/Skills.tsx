@@ -12,12 +12,17 @@ import './Skills.css'
         {/* TECHNOLOGIES */}
         <div className="technologies grid grid-cols-2 md:grid-cols-3 justify-center items-center gap-5 gap-x-8 mx-auto">
           <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-3 mt-[20px] hover:scale-104 transition-transform">
-            <img src="typescript.png" className="logo h-[50px]" alt="TypeScript Logo" />
+            <img src="next.png" className="logo h-[49px]" alt="Next Logo" />
+            <h3 className="ts text-[17px]">NEXT JS</h3>
+          </div>
+
+          <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-3 mt-[20px] hover:scale-104 transition-transform">
+            <img src="typescript.png" className="logo h-[49px]" alt="TypeScript Logo" />
             <h3 className="ts text-[17px]">TYPESCRIPT</h3>
           </div>
 
           <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
-            <img src="javascript.png" className="logo h-[52px]" alt="JavaScript Logo" />
+            <img src="javascript.png" className="logo h-[49px]" alt="JavaScript Logo" />
             <h3 className="js text-[17px]">JAVASCRIPT</h3>
           </div>
 
@@ -32,7 +37,7 @@ import './Skills.css'
           </div>
 
           <div className="spin flex flex-col bg-white w-[120px] rounded-xl h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
-            <img src="nod.png" className="logo h-[48px] mt-1" alt="Node.js Logo" />
+            <img src="nod.png" className="logo h-[48px] mt-1" alt="Node Logo" />
             <h3 className="njs text-[17px]">NODE JS</h3>
           </div>
 
@@ -41,7 +46,7 @@ import './Skills.css'
             <h3 className="njs text-[17px]">SQL</h3>
           </div>
 
-          <div className="spin flex flex-col md:justify-self-center bg-white w-[120px] rounded-xl md:col-span-3 h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
+          <div className="spin flex flex-col md:justify-self-center bg-white w-[120px] rounded-xl md:col-span-1 h-[120px] justify-center items-center gap-2 mt-[20px] hover:scale-104 transition-transform">
             <img src="exp.png" className="logo h-[48px]" alt="Express Logo" />
             <h3 className="text-[17px] text-shadow-white">EXPRESS JS</h3>
           </div>

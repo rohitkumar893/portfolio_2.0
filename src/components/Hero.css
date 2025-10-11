@@ -11,6 +11,14 @@
   align-items: center;
 }
 
+.about{
+  opacity:0;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
 .sdv{
   opacity:0;
   animation-name: slideIn;
