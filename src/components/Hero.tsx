@@ -5,10 +5,10 @@ const Hero:React.FC = () => {
   return (
     <section className='hero h-full w-full text-white flex bg-gradient-to-r from-gray-900 to-gray-600 flex-col gap-[42px] md:gap-[26px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
       <div className="div mt-[22px]">
-          <p className='summary text-center text-[44px] sm:text-[45px] md:text-[68px] select-none font-medium leading-tight'>I turn <span className='fancytext whitespace-nowrap'> ideas </span> into <br></br> <span className='fancytext whitespace-nowrap'>working solutions</span> through code.</p>
+          <p className='summary text-center text-[40px] sm:text-[45px] md:text-[68px] select-none font-medium leading-tight'>I turn <span className='fancytext whitespace-nowrap'> ideas </span> into <br></br> <span className='fancytext whitespace-nowrap'>working solutions</span> through code.</p>
         </div>
 
-        <p className='about text-[22px] md:text-[25px] text-center w-[340px] md:w-[800px] text-gray-300'>- Hi. I’m an MCA postgraduate, passionate about cutting-edge technologies and focused on building solutions using them.</p>
+        <p className='about text-[21px] md:text-[25px] text-center w-[340px] md:w-[800px] text-gray-300'>- Hi. I’m an MCA postgraduate, passionate about cutting-edge technologies and focused on building solutions using them.</p>
     
         <div className="links mt-[8px] text-center">
           <div className="social-links">
