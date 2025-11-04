@@ -28,12 +28,12 @@ const Projects: React.FC = () => {
           </div>
         </a>
 
-        <a href="https://github.com/rohitkumar893/quiqresume">
+        <a href="https://cryptocurrentnow.vercel.app/">
           <div className='mb-[40px] sm:hover:rotate-2 transition h-[258px] w-[340px] flex flex-col justify-center items-center bg-gray-300 rounded-md hover:bg-blue-200 text-black'>
-            <img src="quiq.png" className='w-full shadow-sm rounded-t-md' alt="Resume Builder" />
-            <h1 className='text-[20px] p-[14px] text-gray-800 font-medium'>QuiqResume</h1>
+            <img src="cryptocurrent.png" className='w-full shadow-sm rounded-t-md' alt="Crypto Prices" />
+            <h1 className='text-[20px] p-[14px] text-gray-800 font-medium'>CryptoCurrent</h1>
             <p className='mb-[20px] mt-[-18px] text-gray-700 text-[16px] sm:text-[18px]'>
-              'Generate your resume'
+              'Crypto-currencies live prices'
             </p>
           </div>
         </a>
