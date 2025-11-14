@@ -4,7 +4,7 @@ import Gradient from './Gradient'
 
 const Hero:React.FC = () => {
   return (
-    <section className='hero h-full w-full text-white flex bg-gradient-to-r from-gray-800 to-gray-900 flex-col gap-[42px] md:gap-[26px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
+    <section className='hero h-full w-full text-white flex bg-gradient-to-r from-gray-800 to-gray-900 flex-col gap-[42px] md:gap-[28px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
       {/* <div className="div mt-[22px]">
          <p className='summary text-center text-[40px] sm:text-[45px] lg:text-[68px] select-none font-medium leading-tight bg-gradient-to-r from-[#A4E733] to-[#33e4e7] bg-clip-text text-transparent'>
             I turn ideas into <br /> working solutions through code.

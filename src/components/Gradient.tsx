@@ -3,7 +3,7 @@ import './Gradient.css';
 export default function GradientText({
   children = null,
   className = '',
-  colors = ['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa'],
+  colors = ['#A8FFD9', '#80CFFF', '#A8FFD9', '#80CFFF', '#A8FFD9'],
   animationSpeed = 8,
   showBorder = false
 }: {
