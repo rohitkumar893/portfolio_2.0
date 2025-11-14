@@ -1,14 +1,24 @@
 import React from 'react'
 import './Hero.css'
+import Gradient from './Gradient'
 
 const Hero:React.FC = () => {
   return (
     <section className='hero h-full w-full text-white flex bg-gradient-to-r from-gray-800 to-gray-900 flex-col gap-[42px] md:gap-[26px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
-      <div className="div mt-[22px]">
+      {/* <div className="div mt-[22px]">
          <p className='summary text-center text-[40px] sm:text-[45px] lg:text-[68px] select-none font-medium leading-tight bg-gradient-to-r from-[#A4E733] to-[#33e4e7] bg-clip-text text-transparent'>
             I turn ideas into <br /> working solutions through code.
           </p>
-        </div>
+        </div> */}
+
+        <Gradient
+          colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+          animationSpeed={4}
+          showBorder={false}
+          className="custom-class mt-[22px] summary text-center text-[40px] sm:text-[45px] lg:text-[68px] select-none font-medium leading-tight bg-gradient-to-r from-[#A4E733] to-[#33e4e7] bg-clip-text text-transparent"
+        >
+          I turn ideas into <br /> working solutions through code.
+        </Gradient>
 
         <p className='about text-[21px] md:text-[25px] text-center w-[340px] lg:w-[840px] text-gray-400'>- Hi. I’m Master in Computer Applications postgraduate, passionate about cutting-edge technologies and focused on building solutions using them.</p>
     
