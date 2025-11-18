@@ -3,7 +3,7 @@ import React from 'react';
 const Projects: React.FC = () => {
   return (
     <section
-      className='projectscont border-b-1 border-white bg-gradient-to-r from-black to-gray-800 text-white flex justify-center items-center h-auto py-[150px] px-[40px] sm:px-[120px] flex-col w-[full]' id="projects">
+      className='projectscont border-t-1 border-gray-500 bg-gradient-to-r from-black to-gray-800 text-white flex justify-center items-center h-auto py-[150px] px-[40px] sm:px-[120px] flex-col w-[full]' id="projects">
       <h1 className='text-[32px] sm:text-[36px] text-center font-bold'>/ PROJECTS :</h1>
 
       <div className='projects flex flex-wrap justify-center gap-10 mt-[50px] sm:w-[80%]'>

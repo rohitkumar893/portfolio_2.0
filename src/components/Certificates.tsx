@@ -2,7 +2,7 @@ import React from 'react'
 
 const Certificates: React.FC = () => {
   return (
-  <section className='certifications border-b-1 border-white flex flex-col justify-center items-center gap-[90px] py-[150px] px-[40px] sm:px-[120px] bg-gradient-to-r from-black to-gray-800'
+  <section className='certifications border-t-1 border-gray-500 flex flex-col justify-center items-center gap-[90px] py-[150px] px-[40px] sm:px-[120px] bg-gradient-to-r from-black to-gray-800'
       id="certifications"
     >
       <h1 className='text-[32px] sm:text-[36px] font-bold text-white'>/ CERTIFICATIONS :</h1>
