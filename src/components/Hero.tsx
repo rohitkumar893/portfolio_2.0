@@ -4,7 +4,7 @@ import Gradient from './Gradient'
 
 const Hero:React.FC = () => {
   return (
-    <section className='hero h-full w-full text-white flex bg-[#171212] flex-col gap-[42px] md:gap-[32px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
+    <section className='hero h-full w-full text-white flex bg-[#171212] flex-col gap-[52px] md:gap-[32px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
         <Gradient
           colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
           animationSpeed={4}
@@ -14,7 +14,7 @@ const Hero:React.FC = () => {
           Hey, I am Rohit.
         </Gradient>
 
-        <p className='about text-[21px] md:text-[29px] text-center w-[340px] lg:w-[840px] text-gray-400'>- Hi. I’m Master in Computer Applications postgraduate, passionate about cutting-edge technologies and focused on building solutions using them.</p>
+        <p className='about text-[21px] md:text-[29px] text-center w-[340px] lg:w-[840px] text-gray-400'>- Hi. I’m a fullstack developer, passionate about cutting-edge technologies and focused on building solutions using them.</p>
     
         <div className="links mt-[8px] text-center">
           <div className="social-links">
