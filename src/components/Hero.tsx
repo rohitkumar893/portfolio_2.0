@@ -14,7 +14,7 @@ const Hero:React.FC = () => {
           Hey, I am Rohit.
         </Gradient>
 
-        <p className='about text-[21px] md:text-[29px] text-center w-[340px] lg:w-[840px] text-gray-400'>- Hi. I’m a fullstack developer, passionate about cutting-edge technologies and focused on building solutions using them.</p>
+        <p className='about text-[21px] md:text-[29px] text-center w-[340px] lg:w-[840px] text-gray-300'>- Hi. I’m a fullstack developer, passionate about cutting-edge technologies and focused on building solutions using them.</p>
     
         <div className="links mt-[8px] text-center">
           <div className="social-links">
