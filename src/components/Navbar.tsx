@@ -7,14 +7,6 @@ const Navbar:React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-      const handleScroll = () => {
-        setScrolled(window.scrollY > 20);
-      };
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-    useEffect(() => {
       // Prevent body scroll when mobile menu is open
       if (isOpen) {
         document.body.style.overflow = 'hidden';
