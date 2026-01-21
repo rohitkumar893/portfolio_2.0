@@ -1,11 +1,12 @@
 import React from 'react'
+import './Certificates.css'
 
 const Certificates: React.FC = () => {
   return (
   <section className='certifications border-t-1 border-gray-500 flex flex-col justify-center items-center gap-[90px] py-[150px] px-[40px] sm:px-[120px] bg-[#141010]'
       id="certifications"
     >
-      <h1 className='text-[32px] sm:text-[36px] font-bold text-white'>/ CERTIFICATIONS :</h1>
+      <h1 className='text-[32px] sm:text-[36px] font-bold bg-gradient-to-r from-[#A4E733] to-[#33e4e7] bg-clip-text text-transparent'>/ CERTIFICATIONS :</h1>
 
       <div className='flex flex-wrap justify-center gap-10'>
         {/* Microsoft Certificate */}

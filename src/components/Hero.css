@@ -1,9 +1,102 @@
-/* .hero{
-  background-image: url('/public/bg2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
+/* Hero Section Background Effects */
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #171212 0%, #141010 50%, #171212 100%);
+}
+
+.hero-bg-gradient {
+  background: radial-gradient(circle at 20% 50%, rgba(164, 231, 51, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(51, 228, 231, 0.05) 0%, transparent 50%);
+  animation: gradientShift 8s ease infinite;
+}
+
+.hero-particles {
+  background-image: 
+    radial-gradient(2px 2px at 20% 30%, rgba(164, 231, 51, 0.15), transparent),
+    radial-gradient(2px 2px at 60% 70%, rgba(51, 228, 231, 0.15), transparent),
+    radial-gradient(1px 1px at 50% 50%, rgba(164, 231, 51, 0.1), transparent),
+    radial-gradient(1px 1px at 80% 10%, rgba(51, 228, 231, 0.1), transparent);
+  background-size: 200% 200%;
+  animation: particleMove 20s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes particleMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.hero-title-wrapper {
+  position: relative;
+  padding: 0 20px;
+}
+
+.hero-title {
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.hero-content-wrapper {
+  position: relative;
+}
+
+.hero-description-wrapper {
+  position: relative;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .hero-description-wrapper {
+    margin-top: 20px;
+  }
+}
+
+.hero-description {
+  position: relative;
+  font-weight: 400;
+  opacity: 0.95;
+  transition: opacity 0.3s ease;
+}
+
+.hero-description:hover {
+  opacity: 1;
+}
+
+/* Decorative accent line - centered between title and description */
+.hero-title-wrapper::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #A4E733, #33e4e7, transparent);
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .hero-title-wrapper::after {
+    width: 200px;
+    height: 4px;
+    bottom: -10px;
+  }
+}
 
 .social-links,.flex-center {
   display: flex;
@@ -14,9 +107,10 @@
 .about{
   opacity:0;
   animation-name: slideIn;
-  animation-duration: 2s;
-  animation-delay: 0.6s;
+  animation-duration: 1.2s;
+  animation-delay: 0.4s;
   animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sdv{
@@ -30,9 +124,11 @@
 .social-links{
   opacity:0;
   animation-name: slideIn;
-  animation-duration: 2s;
-  animation-delay: 0.4s;
+  animation-duration: 1.2s;
+  animation-delay: 0.6s;
   animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 12px;
 }
 
 @font-face {
@@ -51,11 +147,7 @@
 }
 
 .summary{
-  opacity:0;
-  animation-name: slideIn2;
-  animation-duration: 2.5s;
-  animation-delay: 0.4s;
-  animation-fill-mode: forwards;
+  opacity: 1;
 }
 
 .arrow{
@@ -66,6 +158,28 @@
   animation-fill-mode: forwards;
 }
 
+.arrow-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.arrow-link:hover {
+  transform: translateY(5px);
+}
+
+.arrow-icon {
+  transition: all 0.3s ease;
+  opacity: 0.8;
+  filter: brightness(0.9);
+}
+
+.arrow-link:hover .arrow-icon {
+  opacity: 1;
+  filter: brightness(1.2);
+  transform: scale(1.15);
+}
+
 .social-btn {
   cursor: pointer;
   height: 68px;
@@ -73,28 +187,53 @@
   font-family: 'Titillium Web', sans-serif;
   color: #333;
   border-radius: 10px;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.15), 0px 2px 5px rgba(0,0,0,0.1);
   background: white;
   margin: 5px;
-  transition: 0.3s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(164, 231, 51, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.social-btn:hover::before {
+  left: 100%;
 }
 
 .social-btn svg {
   height: 34px;
   width: 34px;
+  transition: transform 0.3s ease;
+}
+
+.social-btn:hover svg {
+  transform: scale(1.1);
 }
 
 .social-btn span {
   width: 0px;
   overflow: hidden;
-  transition: 0.3s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
+  font-weight: 600;
 }
 
 .social-btn:hover {
   width: 150px;
   border-radius: 5px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.2), 0px 4px 10px rgba(164, 231, 51, 0.15);
+  transform: translateY(-2px);
 }
 
 .social-btn:hover span {
@@ -104,15 +243,25 @@
 
 #linkedin svg {
   fill: #252424;
+  transition: fill 0.3s ease;
 }
 
-#github {
+#linkedin:hover svg {
+  fill: #0a66c2;
+}
+
+#github svg {
   fill: #252424;
+  transition: fill 0.3s ease;
+}
+
+#github:hover svg {
+  fill: #333;
 }
 
 @keyframes slideIn {
   from {
-      transform: translateY(50px);
+      transform: translateY(30px);
       opacity: 0;
   }
   to {
@@ -146,6 +295,20 @@
   height: 32px;
   width: 32px;
 }
+
+  .hero-title-wrapper {
+    padding: 0 10px;
+  }
+  
+  .hero-description-wrapper {
+    padding: 0 10px;
+  }
+  
+  .hero-title-wrapper::after {
+    width: 100px;
+    height: 2px;
+    bottom: -8px;
+  }
 }
 
 @media (hover: none) and (pointer: coarse) {
@@ -157,6 +320,7 @@
   .social-btn:hover {
     width: 68px !important;
     border-radius: 10px !important;
+    transform: none !important;
   }
 
   .social-btn span {

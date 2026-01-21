@@ -4,19 +4,31 @@ import Gradient from './Gradient'
 
 const Hero:React.FC = () => {
   return (
-    <section className='hero h-full w-full text-white flex bg-[#171212] flex-col gap-[52px] md:gap-[32px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px]' id="home">
-        <Gradient
-          colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-          animationSpeed={4}
-          showBorder={false}
-          className="custom-class mt-[22px] summary text-center text-[44px] sm:text-[50px] lg:text-[75px] select-none font-medium leading-tight bg-gradient-to-r from-[#A4E733] to-[#33e4e7] bg-clip-text text-transparent"
-        >
-          Hey, I am Rohit.
-        </Gradient>
+    <section className='hero h-full w-full text-white flex bg-[#171212] flex-col gap-[48px] md:gap-[40px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px] relative overflow-hidden' id="home">
+        {/* Animated Background Elements */}
+        <div className="hero-bg-gradient absolute inset-0 opacity-30"></div>
+        <div className="hero-particles absolute inset-0"></div>
+        
+        <div className="relative z-10 flex flex-col items-center w-full max-w-5xl hero-content-wrapper">
+          <div className="hero-title-wrapper mb-6 md:mb-8">
+            <Gradient
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={4}
+              showBorder={false}
+              className="custom-class summary text-center text-[48px] sm:text-[56px] md:text-[64px] lg:text-[80px] xl:text-[90px] select-none font-bold leading-[1.1] bg-gradient-to-r from-[#A4E733] via-[#33e4e7] to-[#A4E733] bg-clip-text text-transparent hero-title"
+            >
+              Hey, I am Rohit.
+            </Gradient>
+          </div>
 
-        <p className='about text-[21px] md:text-[29px] text-center w-[340px] lg:w-[840px] text-gray-300'>- Hi. I’m a fullstack developer, passionate about cutting-edge technologies and focused on building solutions using them.</p>
+          <div className="hero-description-wrapper px-4">
+            <p className='about text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] text-center w-full max-w-[800px] text-gray-300 leading-relaxed hero-description'>
+              Fullstack developer passionate about cutting-edge technologies and building innovative solutions that make a difference.
+            </p>
+          </div>
+        </div>
     
-        <div className="links mt-[8px] text-center">
+        <div className="links mt-[16px] text-center relative z-10">
           <div className="social-links">
               <a href="https://github.com/rohitkumar893" target="_blank" rel="noopener noreferrer">
                 <div id="github" className="social-btn flex-center">
@@ -36,10 +48,12 @@ const Hero:React.FC = () => {
                 </div>
               </a>       
             </div>
-
-        <div className="absolute arrow w-full flex justify-center p-0 left-0 top-[92%]">
-            <a href="#projects"><img src='arrow.png' className='h-[28px] md:h-[32px] animate-bounce' /></a>
         </div>
+
+        <div className="absolute arrow w-full flex justify-center p-0 left-0 bottom-[5%] md:bottom-[3%] z-10">
+            <a href="#projects" className="arrow-link" aria-label="Scroll to projects">
+              <img src='arrow.png' className='h-[32px] md:h-[36px] animate-bounce arrow-icon' alt="Scroll down" />
+            </a>
         </div>
     </section>
   )

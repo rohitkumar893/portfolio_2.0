@@ -7,9 +7,17 @@
   }
 }
 
-
 .spin{
   background-color: rgba(101, 101, 101, 0.582);
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.spin:hover {
+  box-shadow: 0px 8px 25px rgba(164, 231, 51, 0.2), 0px 4px 15px rgba(0,0,0,0.15);
+  transform: translateY(-5px) scale(1.04);
+  border-color: rgba(164, 231, 51, 0.3);
 }
 
 .spin:hover .logo{
@@ -17,4 +25,13 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     transform-style: preserve-3d;
+}
+
+.spin .ts {
+  transition: color 0.3s ease;
+}
+
+.spin:hover .ts {
+  color: #A4E733;
+  font-weight: 600;
 }

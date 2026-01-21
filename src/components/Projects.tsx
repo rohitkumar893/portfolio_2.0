@@ -1,10 +1,11 @@
 import React from 'react';
+import './Projects.css';
 
 const Projects: React.FC = () => {
   return (
     <section
       className='projectscont border-t-1 border-gray-500 bg-[#171212] text-white flex justify-center items-center h-auto py-[150px] px-[40px] sm:px-[120px] flex-col w-[full]' id="projects">
-      <h1 className='text-[32px] sm:text-[36px] text-center font-bold'>/ PROJECTS :</h1>
+      <h1 className='text-[32px] sm:text-[36px] text-center font-bold bg-gradient-to-r from-[#A4E733] to-[#33e4e7] bg-clip-text text-transparent'>/ PROJECTS :</h1>
 
       <div className='projects flex flex-wrap justify-center gap-10 mt-[50px] sm:w-[80%]'>
 

@@ -42,7 +42,7 @@ import './Skills.css'
         className="skills border-t-1 border-gray-500 text-[40px] select-none w-full bg-[#141010] p-[110px] px-[40px] sm:px-[120px] flex flex-col gap-[40px]"
         id="skills"
       >
-        <h1 className="text-center text-[32px] sm:text-[36px] font-bold">/ MY TECH STACK :</h1>
+        <h1 className="text-center text-[32px] sm:text-[36px] font-bold bg-gradient-to-r from-[#A4E733] to-[#33e4e7] bg-clip-text text-transparent">/ MY TECH STACK :</h1>
 
         {/* TECHNOLOGIES */}
         <div className="technologies grid grid-cols-2 md:grid-cols-3 justify-center items-center gap-5 gap-x-8 mx-auto">

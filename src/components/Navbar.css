@@ -1,9 +1,87 @@
 .navbar{
   opacity:0;
   animation-name: slideInTwo;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-delay: 0s;
   animation-fill-mode: forwards;
+  border-bottom: 2px solid rgba(107, 114, 128, 0.4);
+  background: rgba(20, 16, 16, 0.98);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-scrolled {
+  background: rgba(20, 16, 16, 1);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7), 
+              0 0 0 1px rgba(164, 231, 51, 0.15);
+  border-bottom: 2px solid rgba(107, 114, 128, 0.5);
+}
+
+.navbar .name {
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar .name:hover {
+  transform: scale(1.05);
+}
+
+/* Desktop Navigation Container */
+.nav-menu-container {
+  background: rgba(30, 40, 55, 0.95) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.nav-menu-container:hover {
+  background: rgba(40, 50, 65, 1) !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Desktop Navigation Links */
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #A4E733, #33e4e7);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover::after {
+  width: 60%;
+}
+
+/* Mobile Navigation Links */
+.mobile-nav-link {
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: slideInFromLeft 0.3s ease forwards;
+}
+
+.mobile-nav-link:nth-child(1) { animation-delay: 0.1s; }
+.mobile-nav-link:nth-child(2) { animation-delay: 0.15s; }
+.mobile-nav-link:nth-child(3) { animation-delay: 0.2s; }
+.mobile-nav-link:nth-child(4) { animation-delay: 0.25s; }
+.mobile-nav-link:nth-child(5) { animation-delay: 0.3s; }
+
+.mobile-menu-overlay.visible .mobile-nav-link {
+  animation: slideInFromLeft 0.4s ease forwards;
 }
 
 @keyframes slideInTwo {
@@ -17,9 +95,46 @@
   }
 }
 
-@media(max-width:780px){
+@keyframes slideInFromLeft {
+  from {
+      transform: translateX(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px){
     .navbar{
-        opacity:1;
+        opacity: 1;
         animation: none;
+        height: 64px;
     }
+    
+    .navbar-scrolled {
+      height: 64px;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Smooth transitions for all interactive elements */
+.navbar * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Focus states for accessibility */
+.nav-link:focus-visible,
+.mobile-nav-link:focus-visible {
+  outline: 2px solid #A4E733;
+  outline-offset: 4px;
+  border-radius: 4px;
 }

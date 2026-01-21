@@ -1,0 +1,29 @@
+/* Certificates Section Enhancements */
+.certifications > div > a {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
+.certifications > div > a:hover {
+  transform: translateY(-5px);
+}
+
+.certifications > div > a > div {
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.certifications > div > a:hover > div {
+  box-shadow: 0px 8px 30px rgba(164, 231, 51, 0.2), 0px 4px 15px rgba(0,0,0,0.2);
+  border-color: rgba(164, 231, 51, 0.4);
+}
+
+.certifications img {
+  transition: transform 0.5s ease;
+}
+
+.certifications > div > a:hover img {
+  transform: scale(1.05);
+}
+
