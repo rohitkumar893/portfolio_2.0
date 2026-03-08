@@ -51,7 +51,7 @@ import './Skills.css'
             return (
             <div key={i} className="spin flex flex-col bg-white w-full max-w-[160px] sm:w-[120px] rounded-xl h-[120px] justify-center items-center gap-3 mt-[20px] hover:scale-104 transition-transform">
               <img src={v.imagePath} className="logo h-[49px]" alt="Next Logo" />
-              <h3 className="ts text-[17px]">{v.skillName}</h3>
+              <h3 className="ts text-[14px]">{v.skillName}</h3>
             </div>)
           })
           }
