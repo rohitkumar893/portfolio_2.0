@@ -5,10 +5,10 @@
   animation-delay: 0s;
   animation-fill-mode: forwards;
   border-bottom: 2px solid rgba(107, 114, 128, 0.4);
-  background: rgba(20, 16, 16, 0.98);
+  background: #10192d;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 15px rgba(29, 29, 30, 0.5);
 }
 
 .navbar-scrolled {

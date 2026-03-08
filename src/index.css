@@ -21,14 +21,14 @@ html, body, #root{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #A4E733, #33e4e7);
+  background: rgb(9, 9, 135);
   border-radius: 10px;
   border: 2px solid #1a1a1a;
   transition: background 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #33e4e7, #A4E733);
+  background: rgb(48, 48, 212);
 }
 
 /* Selection Styling */

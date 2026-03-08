@@ -1,16 +1,15 @@
 import React from 'react';
-import './Projects.css';
 
 const Projects: React.FC = () => {
   return (
     <section
-      className='projectscont border-t-1 border-gray-500 bg-[#171212] text-white flex justify-center items-center h-auto py-[150px] px-[40px] sm:px-[120px] flex-col w-[full]' id="projects">
-      <h1 className='text-[32px] sm:text-[36px] text-center font-bold bg-gradient-to-r from-[#A4E733] to-[#33e4e7] bg-clip-text text-transparent'>/ PROJECTS :</h1>
+      className='projectscont border-t-1 border-gray-500 bg-[#141f38] text-white flex justify-center items-center h-auto py-[110px] sm:py-[130px] lg:py-[150px] px-4 sm:px-8 md:px-12 lg:px-[120px] flex-col w-full' id="projects">
+      <h1 className='text-[32px] sm:text-[36px] text-center font-bold bg-gradient-to-r bg-clip-text text-gray-200'>/ PROJECTS :</h1>
 
-      <div className='projects flex flex-wrap justify-center gap-10 mt-[50px] sm:w-[80%]'>
+      <div className='projects flex w-full flex-wrap justify-center gap-7 sm:gap-8 lg:gap-10 mt-[40px] sm:mt-[50px] md:w-[90%] lg:w-[80%]'>
 
-        <a href="https://roomsley.vercel.app/">
-          <div className='mb-[40px] sm:hover:rotate-2 transition h-[258px] w-[340px] flex flex-col justify-center items-center bg-gray-300 rounded-md hover:bg-blue-200 text-black'>
+        <a href="https://roomsley.vercel.app/" className='w-full max-w-[340px]'>
+          <div className='mb-[40px] sm:hover:rotate-2 transition h-[258px] w-full max-w-[340px] flex flex-col justify-center items-center bg-gray-300 rounded-md hover:bg-blue-200 text-black'>
             <img src="roomsley.png" className='w-full shadow-sm rounded-t-md' alt="Roomsley" />
             <h1 className='text-[20px] p-[14px] text-gray-800 font-medium'>Roomsley</h1>
             <p className='mb-[20px] mt-[-18px] text-gray-700 text-[16px] sm:text-[18px]'>
@@ -19,8 +18,8 @@ const Projects: React.FC = () => {
           </div>
         </a>
 
-        <a href="https://mynotespark.vercel.app/">
-          <div className='mb-[40px] sm:hover:rotate-2 transition h-[258px] w-[340px] flex flex-col justify-center items-center bg-gray-300 rounded-md hover:bg-blue-200 text-black'>
+        <a href="https://mynotespark.vercel.app/" className='w-full max-w-[340px]'>
+          <div className='mb-[40px] sm:hover:rotate-2 transition h-[258px] w-full max-w-[340px] flex flex-col justify-center items-center bg-gray-300 rounded-md hover:bg-blue-200 text-black'>
             <img src="notespark.png" className='w-full shadow-sm rounded-t-md' alt="Resume Builder" />
             <h1 className='text-[20px] p-[14px] text-gray-800 font-medium'>NoteSpark</h1>
             <p className='mb-[20px] mt-[-18px] text-gray-700 text-[16px] sm:text-[18px]'>
@@ -29,8 +28,8 @@ const Projects: React.FC = () => {
           </div>
         </a>
 
-        <a href="https://cryptocurrentnow.vercel.app/">
-          <div className='mb-[40px] sm:hover:rotate-2 transition h-[258px] w-[340px] flex flex-col justify-center items-center bg-gray-300 rounded-md hover:bg-blue-200 text-black'>
+        <a href="https://cryptocurrentnow.vercel.app/" className='w-full max-w-[340px]'>
+          <div className='mb-[40px] sm:hover:rotate-2 transition h-[258px] w-full max-w-[340px] flex flex-col justify-center items-center bg-gray-300 rounded-md hover:bg-blue-200 text-black'>
             <img src="cryptocurrent.png" className='w-full shadow-sm rounded-t-md' alt="Crypto Prices" />
             <h1 className='text-[20px] p-[14px] text-gray-800 font-medium'>CryptoCurrent</h1>
             <p className='mb-[20px] mt-[-18px] text-gray-700 text-[16px] sm:text-[18px]'>

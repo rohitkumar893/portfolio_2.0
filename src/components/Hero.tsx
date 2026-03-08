@@ -1,58 +1,54 @@
 import React from 'react'
 import './Hero.css'
-import Gradient from './Gradient'
+import ExpressCodeEditor from './ExpressCard'
 
 const Hero:React.FC = () => {
   return (
-    <section className='hero h-full w-full text-white flex bg-[#171212] flex-col gap-[48px] md:gap-[40px] justify-center items-center pl-[32px] pr-[32px] sm:pl-[140px] sm:pr-[140px] relative overflow-hidden' id="home">
-        {/* Animated Background Elements */}
-        <div className="hero-bg-gradient absolute inset-0 opacity-30"></div>
-        <div className="hero-particles absolute inset-0"></div>
-        
-        <div className="relative z-10 flex flex-col items-center w-full max-w-5xl hero-content-wrapper">
-          <div className="hero-title-wrapper mb-6 md:mb-8">
-            <Gradient
-              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-              animationSpeed={4}
-              showBorder={false}
-              className="custom-class summary text-center text-[48px] sm:text-[56px] md:text-[64px] lg:text-[80px] xl:text-[90px] select-none font-bold leading-[1.1] bg-gradient-to-r from-[#A4E733] via-[#33e4e7] to-[#A4E733] bg-clip-text text-transparent hero-title"
-            >
-              Hey, I am Rohit.
-            </Gradient>
-          </div>
+    <section className='hero min-h-screen w-full text-white flex flex-col lg:flex-row bg-[#141f38] gap-[40px] md:gap-[48px] lg:gap-[40px] justify-center items-center pt-20 md:pt-24 lg:pt-0 px-4 sm:px-8 md:px-12 lg:px-[140px] relative overflow-hidden' id="home">
+            <div className='flex w-full flex-row justify-center lg:justify-start'>
+              <div className="relative z-10 flex flex-col items-start w-full max-w-5xl hero-content-wrapper">
+                <div className="name mb-6 md:mb-8 px-2 sm:px-3 lg:px-0">
+                  <h1
+                    className="text-center lg:text-left text-amber-50 text-[42px] sm:text-[56px] md:text-[52px] lg:text-[40px] xl:text-[40px] select-none font-semibold leading-[1.1] bg-clip-text"
+                  >
+                    Hey, I am Rohit.
+                  </h1>
+                </div>
 
-          <div className="hero-description-wrapper px-4">
-            <p className='about text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] text-center w-full max-w-[800px] text-gray-300 leading-relaxed hero-description'>
-              Fullstack developer passionate about cutting-edge technologies and building innovative solutions that make a difference.
-            </p>
+                <p className='about px-2 sm:px-3 lg:px-0 text-[16px] sm:text-[22px] md:text-[24px] lg:text-[22px] w-full max-w-[800px] text-gray-400 leading-relaxed hero-description'>
+                  Fullstack developer passionate about cutting-edge technologies  and building innovative solutions that make a difference.
+                </p>
+  
+              <div className="links mt-[16px] text-center relative z-10">
+                <div className="social-links">
+                    <a href="https://github.com/rohitkumar893" target="_blank" rel="noopener noreferrer">
+                      <div id="github" className="social-btn flex-center">
+                        <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>GitHub</span>
+                      </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/rohitkumar893/" target="_blank" rel="noopener noreferrer">
+                      <div id="linkedin" className="social-btn flex-center">
+                        <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                      </div>
+                    </a>       
+                  </div>
+              </div>
           </div>
-        </div>
     
-        <div className="links mt-[16px] text-center relative z-10">
-          <div className="social-links">
-              <a href="https://github.com/rohitkumar893" target="_blank" rel="noopener noreferrer">
-                <div id="github" className="social-btn flex-center">
-                  <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                  </svg>
-                  <span>GitHub</span>
-                </div>
-              </a>
-
-              <a href="https://www.linkedin.com/in/rohitkumar893/" target="_blank" rel="noopener noreferrer">
-                <div id="linkedin" className="social-btn flex-center">
-                  <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
-                  </svg>
-                  <span>LinkedIn</span>
-                </div>
-              </a>       
-            </div>
         </div>
+
+        <ExpressCodeEditor /> 
 
         <div className="absolute arrow w-full flex justify-center p-0 left-0 bottom-[5%] md:bottom-[3%] z-10">
             <a href="#projects" className="arrow-link" aria-label="Scroll to projects">
-              <img src='arrow.png' className='h-[32px] md:h-[36px] animate-bounce arrow-icon' alt="Scroll down" />
+              <img src='arrow2.png' className='hidden md:block h-[56px] animate-bounce arrow-icon' alt="Scroll down" />
             </a>
         </div>
     </section>
