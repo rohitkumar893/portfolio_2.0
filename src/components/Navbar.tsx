@@ -41,11 +41,11 @@ const Navbar:React.FC = () => {
         
       {/* Desktop Menu */}
       <nav className='hidden lg:flex gap-2 lg:gap-3 xl:gap-2 bg-gray-900/90 backdrop-blur-xl justify-center items-center px-4 lg:px-6 h-12 lg:h-14 rounded-full text-base lg:text-lg xl:text-xl border border-gray-800/50 shadow-lg hover:border-gray-700/50 transition-all duration-300 nav-menu-container'>
-        <a href="#home" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-gray-800/50 transition-all duration-300 hover:text-[#A4E733] font-medium">HOME</a>
-        <a href="#projects" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-gray-800/50 transition-all duration-300 hover:text-[#A4E733] font-medium">PROJECTS</a>
-        <a href="#skills" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-gray-800/50 transition-all duration-300 hover:text-[#A4E733] font-medium">SKILLS</a>
-        <a href="#certifications" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-gray-800/50 transition-all duration-300 hover:text-[#A4E733] font-medium">CERTIFICATES</a>
-        <a href="#contact" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-gray-800/50 transition-all duration-300 hover:text-[#A4E733] font-medium">CONTACT</a>
+        <a href="#home" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-gray-800/50 transition-all duration-300 font-medium">HOME</a>
+        <a href="#projects" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-gray-800/50 transition-all duration-300 font-medium">PROJECTS</a>
+        <a href="#skills" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-gray-800/50 transition-all duration-300 font-medium">SKILLS</a>
+        <a href="#certifications" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-gray-800/50 transition-all duration-300 font-medium">CERTIFICATES</a>
+        <a href="#contact" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-gray-800/50 transition-all duration-300 font-medium">CONTACT</a>
       </nav>
 
       {/* Mobile Menu Overlay */}
@@ -59,35 +59,35 @@ const Navbar:React.FC = () => {
           <a 
             href="#home" 
             onClick={() => setIsOpen(false)}
-            className="mobile-nav-link py-3 sm:py-4 border-b border-gray-800/50 hover:text-[#A4E733] transition-all duration-300 hover:border-[#A4E733]/50"
+            className="mobile-nav-link py-3 sm:py-4 border-b border-gray-800/50 transition-all duration-300 hover:border-gray-700/60"
           >
             HOME
           </a>
           <a 
             href="#projects" 
             onClick={() => setIsOpen(false)}
-            className="mobile-nav-link py-3 sm:py-4 border-b border-gray-800/50 hover:text-[#A4E733] transition-all duration-300 hover:border-[#A4E733]/50"
+            className="mobile-nav-link py-3 sm:py-4 border-b border-gray-800/50 transition-all duration-300 hover:border-gray-700/60"
           >
             PROJECTS
           </a>
           <a 
             href="#skills" 
             onClick={() => setIsOpen(false)}
-            className="mobile-nav-link py-3 sm:py-4 border-b border-gray-800/50 hover:text-[#A4E733] transition-all duration-300 hover:border-[#A4E733]/50"
+            className="mobile-nav-link py-3 sm:py-4 border-b border-gray-800/50 transition-all duration-300 hover:border-gray-700/60"
           >
             SKILLS
           </a>
           <a 
             href="#certifications" 
             onClick={() => setIsOpen(false)}
-            className="mobile-nav-link py-3 sm:py-4 border-b border-gray-800/50 hover:text-[#A4E733] transition-all duration-300 hover:border-[#A4E733]/50"
+            className="mobile-nav-link py-3 sm:py-4 border-b border-gray-800/50 transition-all duration-300 hover:border-gray-700/60"
           >
             CERTIFICATES
           </a>
           <a 
             href="#contact" 
             onClick={() => setIsOpen(false)}
-            className="mobile-nav-link py-3 sm:py-4 border-b border-gray-800/50 hover:text-[#A4E733] transition-all duration-300 hover:border-[#A4E733]/50"
+            className="mobile-nav-link py-3 sm:py-4 border-b border-gray-800/50 transition-all duration-300 hover:border-gray-700/60"
           >
             CONTACT
           </a>
