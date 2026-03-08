@@ -27,7 +27,7 @@ const Navbar:React.FC = () => {
       
       {/* Hamburger Button */}
       <button 
-        className='lg:hidden z-[60] relative p-2 rounded-lg hover:bg-gray-800/50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#A4E733] focus:ring-offset-2 focus:ring-offset-[#141010]'
+        className='lg:hidden z-[60] relative p-2 rounded-lg hover:bg-gray-800/50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#ffffff] focus:ring-offset-2 focus:ring-offset-[#141010]'
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
         aria-expanded={isOpen}
