@@ -4,7 +4,7 @@ import ExpressCodeEditor from './ExpressCard'
 
 const Hero:React.FC = () => {
   return (
-    <section className='hero min-h-screen w-full text-white flex flex-col lg:flex-row bg-[#141f38] gap-[40px] md:gap-[48px] lg:gap-[40px] justify-center items-center pt-20 md:pt-24 lg:pt-0 px-4 sm:px-8 md:px-12 lg:px-[140px] relative overflow-hidden' id="home">
+    <section className='hero min-h-screen w-full text-white flex flex-col lg:flex-row bg-[#141f38] gap-[40px] md:gap-[48px] lg:gap-[40px] justify-center items-center pt-20 md:pt-24 lg:pt-0 px-5 sm:px-8 md:px-12 lg:px-[140px] relative overflow-hidden' id="home">
             <div className='flex w-full flex-row justify-center lg:justify-start'>
               <div className="relative z-10 flex flex-col items-start w-full max-w-5xl hero-content-wrapper">
                 <div className="name mb-6 md:mb-8 px-2 sm:px-3 lg:px-0">

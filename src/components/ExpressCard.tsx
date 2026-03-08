@@ -1,3 +1,5 @@
+import './ExpressCard.css'
+
 const ExpressCodeEditor = () => {
   // Line numbers 01 to 14
   const lines = Array.from({ length: 14 }, (_, i) => 
@@ -5,7 +7,7 @@ const ExpressCodeEditor = () => {
   );
 
   return (
-      <div className="w-full max-w-[600px] md:max-w-[700px] lg:max-w-3xl hover:rotate-2 transform transition-transform duration-300 rounded-xl bg-[#0c1423] border border-slate-800/50 overflow-hidden font-mono">
+      <div className="expresscard w-full max-w-[600px] md:max-w-[700px] lg:max-w-3xl hover:rotate-2 transform transition-transform duration-300 rounded-xl bg-[#0c1423] border border-slate-800/50 overflow-hidden font-mono">
         
         {/* Header Section */}
         <div className="p-4 sm:p-5 flex flex-col gap-4 sm:gap-6">
