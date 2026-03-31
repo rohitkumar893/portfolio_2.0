@@ -4,18 +4,11 @@
   animation-duration: 1s;
   animation-delay: 0s;
   animation-fill-mode: forwards;
-  border-bottom: 2px solid rgba(107, 114, 128, 0.4);
-  background: #10192d;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 2px 15px rgba(29, 29, 30, 0.5);
-}
-
-.navbar-scrolled {
-  background: rgba(20, 16, 16, 1);
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7), 
-              0 0 0 1px rgba(164, 231, 51, 0.15);
-  border-bottom: 2px solid rgba(107, 114, 128, 0.5);
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
 }
 
 .navbar .name {
@@ -29,13 +22,13 @@
 
 /* Desktop Navigation Container */
 .nav-menu-container {
-  background: rgba(30, 40, 55, 0.95) !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  background: #ffffff !important;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.06);
 }
 
 .nav-menu-container:hover {
-  background: rgba(40, 50, 65, 1) !important;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+  background: #ffffff !important;
+  box-shadow: 0 12px 42px rgba(15, 23, 42, 0.08);
 }
 
 /* Desktop Navigation Links */
@@ -54,20 +47,20 @@
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background: rgba(255, 255, 255, 0.6);
+  background: #0f172a;
   transition: width 0.3s ease;
   border-radius: 2px;
 }
 
 .nav-link:hover::after {
-  width: 60%;
+  width: 55%;
 }
 
 /* Mobile Navigation Links */
 .mobile-nav-link {
   position: relative;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-decoration: none;
   transform: translateX(-20px);
   opacity: 0;
@@ -113,10 +106,6 @@
         animation: none;
         height: 64px;
     }
-    
-    .navbar-scrolled {
-      height: 64px;
-    }
 }
 
 @media(min-width: 769px) and (max-width: 1024px) {
@@ -134,7 +123,7 @@
 /* Focus states for accessibility */
 .nav-link:focus-visible,
 .mobile-nav-link:focus-visible {
-  outline: 2px solid #A4E733;
+  outline: 2px solid #0f172a;
   outline-offset: 4px;
   border-radius: 4px;
 }

@@ -1,25 +1,42 @@
 import React from 'react'
 import './Hero.css'
-import ExpressCodeEditor from './ExpressCard'
 
 const Hero:React.FC = () => {
   return (
-    <section className='hero min-h-screen w-full text-white flex flex-col lg:flex-row bg-[#141f38] gap-[40px] md:gap-[48px] lg:gap-[40px] justify-center items-center pt-20 md:pt-24 lg:pt-0 px-5 sm:px-8 md:px-12 lg:px-[140px] relative overflow-hidden' id="home">
-            <div className='flex w-full flex-row justify-center lg:justify-start'>
-              <div className="relative z-10 flex flex-col items-start w-full max-w-5xl hero-content-wrapper">
-                <div className="name mb-6 md:mb-8 px-2 sm:px-3 lg:px-0">
+    <section className='hero min-h-screen w-full text-slate-900 flex bg-white pt-24 md:pt-28 lg:pt-0 px-5 sm:px-8 md:px-12 lg:px-[120px] relative overflow-hidden' id="home">
+            <div className='flex w-full justify-center items-center py-16 sm:py-20 lg:py-24'>
+              <div className="relative z-10 flex flex-col items-start w-full max-w-4xl hero-content-wrapper">
+                <div className="name mb-5 md:mb-6 px-2 sm:px-3 lg:px-0">
+                  <p className="mb-4 text-center lg:text-left text-[12px] sm:text-[13px] font-semibold tracking-[0.28em] text-slate-500">
+                    SOFTWARE DEVELOPER
+                  </p>
                   <h1
-                    className="text-center lg:text-left text-amber-50 text-[42px] sm:text-[56px] md:text-[52px] lg:text-[40px] xl:text-[40px] select-none font-semibold leading-[1.1] bg-clip-text"
+                    className="text-center lg:text-left text-slate-950 text-[42px] sm:text-[56px] md:text-[60px] lg:text-[54px] xl:text-[60px] select-none font-semibold leading-[1.02] tracking-[-0.05em]"
                   >
-                    Hey, I am Rohit.
+                    From idea to production.
                   </h1>
                 </div>
 
-                <p className='about px-2 sm:px-3 lg:px-0 text-[16px] sm:text-[22px] md:text-[24px] lg:text-[22px] w-full max-w-[800px] text-gray-400 leading-relaxed hero-description'>
-                  Fullstack developer passionate about cutting-edge technologies  and building innovative solutions that make a difference.
+                <p className='about px-2 sm:px-3 lg:px-0 text-[16px] sm:text-[22px] md:text-[24px] lg:text-[22px] w-full max-w-[760px] text-slate-600 leading-relaxed hero-description'>
+                 I focus on building systems that are clear, reliable, and easy to work with over time, keeping simplicity and maintainability in mind.
                 </p>
-  
-              <div className="links mt-[16px] text-center relative z-10">
+
+              <div className="hero-actions mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+                <a
+                  href="#projects"
+                  className="inline-flex items-center justify-center rounded-full bg-slate-950 px-6 py-3 text-[14px] font-medium tracking-[0.08em] text-white transition-all duration-300 hover:bg-slate-800"
+                >
+                  VIEW PROJECTS
+                </a>
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-[14px] font-medium tracking-[0.08em] text-slate-700 transition-all duration-300 hover:border-slate-900 hover:text-slate-950"
+                >
+                  CONTACT ME
+                </a>
+              </div>
+
+              <div className="links mt-6 text-center relative z-10">
                 <div className="social-links">
                     <a href="https://github.com/rohitkumar893" target="_blank" rel="noopener noreferrer">
                       <div id="github" className="social-btn flex-center">
@@ -40,11 +57,8 @@ const Hero:React.FC = () => {
                     </a>       
                   </div>
               </div>
+            </div>
           </div>
-    
-        </div>
-
-        <ExpressCodeEditor /> 
 
         <div className="absolute arrow w-full flex justify-center p-0 left-0 bottom-[5%] md:bottom-[3%] z-10">
             <a href="#projects" className="arrow-link" aria-label="Scroll to projects">

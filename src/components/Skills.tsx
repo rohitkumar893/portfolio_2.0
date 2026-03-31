@@ -4,59 +4,75 @@ import './Skills.css'
   const Skills: React.FC = () => {
     const skill = [
       {
-        skillName:"NEXT JS",
-        imagePath:"next.png"
+        skillName:"TypeScript",
+        imagePath:"typescript.png",
+        category:"Language"
       },
       {
-        skillName:"JAVASCRIPT",
-        imagePath:"javascript.png"
+        skillName:"Node.js",
+        imagePath:"nod.png",
+        category:"Runtime"
       },
       {
-        skillName:"NODE JS",
-        imagePath:"nod.png"
+        skillName:"React",
+        imagePath:"react.png",
+        category:"Library"
       },
       {
-        skillName:"REACT",
-        imagePath:"react.png"
+        skillName:"JavaScript",
+        imagePath:"javascript.png",
+        category:"Language"
       },
       {
-        skillName:"TAILWIND",
-        imagePath:"Tailwind Logo.png"
+        skillName:"Tailwind CSS",
+        imagePath:"Tailwind Logo.png",
+        category:"Styling"
       },
       {
-        skillName:"EXPRESS JS",
-        imagePath:"exp.png"
+        skillName:"Express.js",
+        imagePath:"exp.png",
+        category:"Backend"
       },
-      {
-        skillName:"TYPESCRIPT",
-        imagePath:"typescript.png"
-      },
+      
       {
         skillName:"SQL",
-        imagePath:"sql.png"
+        imagePath:"sql.png",
+        category:"Database"
       }
     ]
 
     return (
       <section
-        className="skills border-t-1 border-gray-500 text-[40px] select-none w-full bg-[#141f38] py-[90px] sm:py-[105px] lg:py-[110px] px-4 sm:px-8 md:px-12 lg:px-[120px] flex flex-col gap-[40px]"
+        className="skills border-t border-slate-200 select-none w-full bg-white py-[100px] sm:py-[110px] lg:py-[120px] px-4 sm:px-8 md:px-12 lg:px-[120px] flex flex-col gap-[40px]"
         id="skills"
       >
-        <h1 className="text-center text-[32px] sm:text-[36px] font-bold bg-clip-text text-gray-200">/ MY TECH STACK :</h1>
+        <div className="mx-auto flex w-full max-w-6xl flex-col items-center">
+          <p className="text-center text-[12px] sm:text-[13px] font-semibold tracking-[0.28em] text-slate-500">
+            CAPABILITIES
+          </p>
+          <h1 className="mt-4 text-center text-[32px] sm:text-[40px] font-semibold tracking-[-0.03em] text-slate-900">
+            Core Stack
+          </h1>
+          <p className="mt-4 max-w-2xl text-center text-[16px] sm:text-[18px] leading-8 text-slate-600">
+            Technologies I use to build fast, maintainable, and production-ready web applications.
+          </p>
 
-        {/* TECHNOLOGIES */}
-        <div className="technologies grid grid-cols-2 md:grid-cols-3 justify-center items-center gap-4 sm:gap-5 gap-x-4 sm:gap-x-6 lg:gap-x-8 mx-auto">
-          {
-          skill.map((v, i) => {
-            return (
-            <div key={i} className="spin flex flex-col bg-white w-full max-w-[160px] sm:w-[120px] rounded-xl h-[120px] justify-center items-center gap-3 mt-[20px] hover:scale-104 transition-transform">
-              <img src={v.imagePath} className="logo h-[49px]" alt="Next Logo" />
-              <h3 className="ts text-[14px]">{v.skillName}</h3>
-            </div>)
-          })
-          }
+          <div className="technologies mt-11 grid w-full grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {
+            skill.map((v, i) => {
+              return (
+              <div key={i} className="spin flex min-h-[150px] w-full flex-col rounded-[18px] px-5 py-6 sm:px-6 sm:py-7 hover:-translate-y-1 transition-transform">
+                <div className="flex h-14 w-14 items-center justify-center rounded-[14px] bg-slate-50 border border-slate-200">
+                  <img src={v.imagePath} className="logo h-[34px] w-[34px] object-contain" alt={`${v.skillName} logo`} />
+                </div>
+                <p className="mt-5 text-[12px] font-semibold uppercase tracking-[0.18em] text-slate-500">{v.category}</p>
+                <h3 className="ts mt-2 text-[18px] font-semibold tracking-[-0.02em] text-slate-900">{v.skillName}</h3>
+              </div>)
+            })
+            }
+          </div>
         </div>
-        </section>
+      </section>
     );
   };
 
