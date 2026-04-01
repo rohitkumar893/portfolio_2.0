@@ -25,7 +25,7 @@ const Projects = () => {
 
   return (
     <section
-      className='flex h-auto w-full flex-col items-center justify-center border-t border-slate-200 bg-white px-4 py-[96px] text-slate-900 sm:px-8 sm:py-[112px] md:px-12 lg:px-[120px] lg:py-[128px]'
+      className='flex h-auto w-full flex-col items-center justify-center border-t border-slate-200 bg-slate-50 px-4 py-[96px] text-slate-900 sm:px-8 sm:py-[112px] md:px-12 lg:px-[120px] lg:py-[128px]'
       id="projects"
     >
       <div className='w-full max-w-6xl flex flex-col items-center'>
