@@ -1,6 +1,39 @@
 import React from 'react'
 import './Hero.css'
 
+const skills = [
+  {
+    skillName: 'TypeScript',
+    imagePath: 'typescript.png',
+    category: 'Language',
+  },
+  {
+    skillName: 'Node.js',
+    imagePath: 'nod.png',
+    category: 'Runtime',
+  },
+  {
+    skillName: 'React',
+    imagePath: 'react.png',
+    category: 'Library',
+  },
+  {
+    skillName: 'JavaScript',
+    imagePath: 'javascript.png',
+    category: 'Language',
+  },
+  {
+    skillName: 'Tailwind CSS',
+    imagePath: 'Tailwind Logo.png',
+    category: 'Styling',
+  },
+  {
+    skillName: 'Express.js',
+    imagePath: 'exp.png',
+    category: 'Backend',
+  },
+]
+
 const Hero:React.FC = () => {
   return (
     <section className='hero min-h-screen w-full text-slate-900 flex bg-white pt-24 md:pt-28 lg:pt-0 px-5 sm:px-8 md:px-12 lg:px-[120px] relative overflow-hidden' id="home">
@@ -20,22 +53,6 @@ const Hero:React.FC = () => {
                 <p className='about px-2 sm:px-3 lg:px-0 text-[16px] sm:text-[22px] md:text-[24px] lg:text-[22px] w-full max-w-[760px] text-slate-600 leading-relaxed hero-description'>
                  I focus on building systems that are clear, reliable, and easy to work with over time, keeping simplicity and maintainability in mind.
                 </p>
-
-              <div className="hero-actions mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-                <a
-                  href="#projects"
-                  className="inline-flex items-center justify-center rounded-full bg-slate-950 px-6 py-3 text-[14px] font-medium tracking-[0.08em] text-white transition-all duration-300 hover:bg-slate-800"
-                >
-                  VIEW PROJECTS
-                </a>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-[14px] font-medium tracking-[0.08em] text-slate-700 transition-all duration-300 hover:border-slate-900 hover:text-slate-950"
-                >
-                  CONTACT ME
-                </a>
-              </div>
-
               <div className="links mt-6 text-center relative z-10">
                 <div className="social-links">
                     <a href="https://github.com/rohitkumar893" target="_blank" rel="noopener noreferrer">
@@ -56,6 +73,20 @@ const Hero:React.FC = () => {
                       </div>
                     </a>       
                   </div>
+              </div>
+
+              <div className="hero-carousel mt-8 w-full">
+                <div className="hero-carousel-mask">
+                  <div className="hero-carousel-track">
+                    {[...skills, ...skills].map((skill, index) => (
+                      <article key={`${skill.skillName}-${index}`} className="hero-skill-card">
+                        <div className="hero-skill-icon">
+                          <img src={skill.imagePath} alt={`${skill.skillName} logo`} />
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -42,7 +42,7 @@ const Navbar:React.FC = () => {
       <nav className='hidden lg:flex gap-1 xl:gap-2 bg-white justify-center items-center px-3 lg:px-4 h-12 rounded-full text-sm lg:text-[15px] border border-slate-200 shadow-[0_10px_40px_rgba(15,23,42,0.06)] nav-menu-container'>
         <a href="#home" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-slate-100 transition-all duration-300 font-medium text-slate-700">HOME</a>
         <a href="#projects" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-slate-100 transition-all duration-300 font-medium text-slate-700">PROJECTS</a>
-        <a href="#skills" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-slate-100 transition-all duration-300 font-medium text-slate-700">SKILLS</a>
+        <a href="#contact" className="nav-link px-3 lg:px-4 py-2 rounded-full hover:bg-slate-100 transition-all duration-300 font-medium text-slate-700">CONTACT</a>
       </nav>
 
       {/* Mobile Menu Overlay */}
@@ -68,11 +68,11 @@ const Navbar:React.FC = () => {
             PROJECTS
           </a>
           <a 
-            href="#skills" 
+            href="#contact" 
             onClick={() => setIsOpen(false)}
             className="mobile-nav-link py-3 sm:py-4 border-b border-slate-200 transition-all duration-300 hover:border-slate-400"
           >
-            SKILLS
+            CONTACT
           </a>
         </nav>
       </div>
