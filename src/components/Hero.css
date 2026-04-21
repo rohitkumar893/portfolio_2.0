@@ -20,10 +20,10 @@
 }
 
 .hero-carousel {
-  --hero-carousel-gap: 12px;
+  --hero-carousel-gap: 8px;
   --hero-skill-card-size: 96px;
   opacity: 0;
-  width: min(100%, calc((5 * var(--hero-skill-card-size)) + (4 * var(--hero-carousel-gap))));
+  width: min(100%, calc((4.5 * var(--hero-skill-card-size)) + (3.5 * var(--hero-carousel-gap))));
   margin-inline: auto;
   animation-name: slideIn;
   animation-duration: 1.2s;
@@ -273,7 +273,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(calc(-50% - 8px));
+    transform: translateX(calc(-50% - (var(--hero-carousel-gap) / 2)));
   }
 }
 
@@ -307,7 +307,7 @@
 
 @media (max-width: 640px) {
   .hero-carousel {
-    --hero-carousel-gap: 10px;
+    --hero-carousel-gap: 8px;
     --hero-skill-card-size: 82px;
   }
 
