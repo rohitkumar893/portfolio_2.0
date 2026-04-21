@@ -23,9 +23,9 @@ const skills = [
     category: 'Language',
   },
   {
-    skillName: 'Tailwind CSS',
-    imagePath: 'Tailwind Logo.png',
-    category: 'Styling',
+    skillName: 'Python',
+    imagePath: 'python.png',
+    category: 'Language',
   },
   {
     skillName: 'Express.js',
