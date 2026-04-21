@@ -23,7 +23,7 @@
   --hero-carousel-gap: 12px;
   --hero-skill-card-size: 96px;
   opacity: 0;
-  width: min(100%, calc((4 * var(--hero-skill-card-size)) + (3 * var(--hero-carousel-gap))));
+  width: min(100%, calc((5 * var(--hero-skill-card-size)) + (4 * var(--hero-carousel-gap))));
   margin-inline: auto;
   animation-name: slideIn;
   animation-duration: 1.2s;
