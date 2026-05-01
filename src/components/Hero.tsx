@@ -22,11 +22,6 @@ const skills = [
     imagePath: 'react.png',
     category: 'Library',
   },
-  {
-    skillName: 'JavaScript',
-    imagePath: 'javascript.png',
-    category: 'Language',
-  },
 ]
 
 const Hero:React.FC = () => {
