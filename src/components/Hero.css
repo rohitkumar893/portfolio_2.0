@@ -38,8 +38,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 60px;
-  width: 60px;
+  min-height: 68px;
+  width: 68px;
   flex: 0 0 auto;
   border-radius: 18px;
   transition: transform 0.28s ease, filter 0.28s ease;
@@ -52,8 +52,8 @@
 
 .hero-skill-icon {
   display: flex;
-  height: 50px;
-  width: 50px;
+  height: 58px;
+  width: 58px;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
@@ -73,8 +73,8 @@
 }
 
 .hero-skill-icon img {
-  height: 31px;
-  width: 31px;
+  height: 36px;
+  width: 36px;
   object-fit: contain;
 }
 
@@ -286,13 +286,13 @@
   }
 
   .hero-skill-icon {
-    height: 47px;
-    width: 47px;
+    height: 54px;
+    width: 54px;
   }
 
   .hero-skill-icon img {
-    height: 29px;
-    width: 29px;
+    height: 33px;
+    width: 33px;
   }
 }
 
@@ -303,19 +303,19 @@
   }
 
   .hero-skill-card {
-    min-height: 48px;
-    width: 48px;
+    min-height: 58px;
+    width: 58px;
   }
 
   .hero-skill-icon {
-    height: 42px;
-    width: 42px;
+    height: 50px;
+    width: 50px;
     border-radius: 10px;
   }
 
   .hero-skill-icon img {
-    height: 26px;
-    width: 26px;
+    height: 31px;
+    width: 31px;
   }
 }
 
@@ -325,18 +325,18 @@
   }
 
   .hero-skill-card {
-    min-height: 44px;
-    width: 44px;
+    min-height: 52px;
+    width: 52px;
   }
 
   .hero-skill-icon {
-    height: 39px;
-    width: 39px;
+    height: 46px;
+    width: 46px;
   }
 
   .hero-skill-icon img {
-    height: 24px;
-    width: 24px;
+    height: 28px;
+    width: 28px;
   }
 }
 
