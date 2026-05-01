@@ -27,11 +27,6 @@ const skills = [
     imagePath: 'python.png',
     category: 'Language',
   },
-  {
-    skillName: 'Express.js',
-    imagePath: 'exp.png',
-    category: 'Backend',
-  },
 ]
 
 const Hero:React.FC = () => {
@@ -40,7 +35,7 @@ const Hero:React.FC = () => {
             <div className='flex w-full justify-center items-center py-16 sm:py-20 lg:py-24'>
               <div className="relative z-10 flex flex-col items-start w-full max-w-4xl hero-content-wrapper">
                 <div className="name mb-5 md:mb-6 px-2 sm:px-3 lg:px-0">
-                  <p className="mb-4 text-center lg:text-left text-[12px] sm:text-[13px] font-semibold tracking-[0.28em] text-slate-500">
+                  <p className="mb-4 text-center lg:text-left text-[13px] sm:text-[15px] font-semibold tracking-[0.26em] text-slate-500">
                     SOFTWARE DEVELOPER
                   </p>
                   <h1

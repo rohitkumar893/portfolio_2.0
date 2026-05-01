@@ -24,8 +24,8 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: 7px;
-  width: min(100%, 410px);
+  gap: 4px;
+  width: min(100%, 392px);
   margin-inline: auto;
   animation-name: slideIn;
   animation-duration: 1.2s;
@@ -38,8 +38,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 62px;
-  width: 62px;
+  min-height: 60px;
+  width: 60px;
   flex: 0 0 auto;
   border-radius: 18px;
   transition: transform 0.28s ease, filter 0.28s ease;
@@ -52,8 +52,8 @@
 
 .hero-skill-icon {
   display: flex;
-  height: 52px;
-  width: 52px;
+  height: 50px;
+  width: 50px;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
@@ -73,8 +73,8 @@
 }
 
 .hero-skill-icon img {
-  height: 32px;
-  width: 32px;
+  height: 31px;
+  width: 31px;
   object-fit: contain;
 }
 
@@ -271,8 +271,8 @@
 
 @media(max-width:780px){
   .hero-skill-cloud {
-    max-width: 340px;
-    gap: 6px;
+    max-width: 324px;
+    gap: 4px;
   }
 
   .social-btn {
@@ -286,8 +286,8 @@
   }
 
   .hero-skill-icon {
-    height: 48px;
-    width: 48px;
+    height: 47px;
+    width: 47px;
   }
 
   .hero-skill-icon img {
@@ -298,8 +298,8 @@
 
 @media (max-width: 640px) {
   .hero-skill-cloud {
-    max-width: 316px;
-    gap: 5px;
+    max-width: 300px;
+    gap: 3px;
   }
 
   .hero-skill-card {
@@ -321,7 +321,7 @@
 
 @media (max-width: 360px) {
   .hero-skill-cloud {
-    gap: 4px;
+    gap: 2px;
   }
 
   .hero-skill-card {
