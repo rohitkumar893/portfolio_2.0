@@ -13,6 +13,11 @@ const skills = [
     category: 'Runtime',
   },
   {
+    skillName: 'Python',
+    imagePath: 'python.png',
+    category: 'Language',
+  },
+  {
     skillName: 'React',
     imagePath: 'react.png',
     category: 'Library',
@@ -20,11 +25,6 @@ const skills = [
   {
     skillName: 'JavaScript',
     imagePath: 'javascript.png',
-    category: 'Language',
-  },
-  {
-    skillName: 'Python',
-    imagePath: 'python.png',
     category: 'Language',
   },
 ]
