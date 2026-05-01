@@ -57,16 +57,20 @@ import './Skills.css'
             Technologies I use to build fast, maintainable, and production-ready web applications.
           </p>
 
-          <div className="technologies mt-11 grid w-full grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="technologies mt-9 grid w-full grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
             {
             skill.map((v, i) => {
               return (
-              <div key={i} className="spin flex min-h-[150px] w-full flex-col rounded-[18px] px-5 py-6 sm:px-6 sm:py-7 hover:-translate-y-1 transition-transform">
-                <div className="flex h-16 w-16 items-center justify-center rounded-[14px] bg-slate-50 border border-slate-200">
-                  <img src={v.imagePath} className="logo h-[38px] w-[38px] object-contain" alt={`${v.skillName} logo`} />
+              <div
+                key={v.skillName}
+                className="spin skill-card flex min-h-[126px] w-full flex-col rounded-[16px] px-3 py-4 sm:px-4 sm:py-5"
+                style={{ '--skill-index': i } as React.CSSProperties}
+              >
+                <div className="skill-icon flex h-14 w-14 items-center justify-center rounded-[13px] bg-slate-50 border border-slate-200">
+                  <img src={v.imagePath} className="logo h-[34px] w-[34px] object-contain" alt={`${v.skillName} logo`} />
                 </div>
-                <p className="mt-5 text-[12px] font-semibold uppercase tracking-[0.18em] text-slate-500">{v.category}</p>
-                <h3 className="ts mt-2 text-[18px] font-semibold tracking-[-0.02em] text-slate-900">{v.skillName}</h3>
+                <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">{v.category}</p>
+                <h3 className="ts mt-2 text-[16px] font-semibold tracking-[-0.02em] text-slate-900">{v.skillName}</h3>
               </div>)
             })
             }

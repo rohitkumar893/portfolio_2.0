@@ -75,18 +75,18 @@ const Hero:React.FC = () => {
                   </div>
               </div>
 
-              <div className="hero-carousel mt-8 w-full">
-                <div className="hero-carousel-mask">
-                  <div className="hero-carousel-track">
-                    {[...skills, ...skills].map((skill, index) => (
-                      <article key={`${skill.skillName}-${index}`} className="hero-skill-card">
-                        <div className="hero-skill-icon">
-                          <img src={skill.imagePath} alt={`${skill.skillName} logo`} />
-                        </div>
-                      </article>
-                    ))}
-                  </div>
-                </div>
+              <div className="hero-skill-cloud mt-8 w-full" aria-label="Core technologies">
+                {skills.map((skill, index) => (
+                  <article
+                    key={skill.skillName}
+                    className="hero-skill-card"
+                    style={{ '--skill-index': index } as React.CSSProperties}
+                  >
+                    <div className="hero-skill-icon">
+                      <img src={skill.imagePath} alt={`${skill.skillName} logo`} />
+                    </div>
+                  </article>
+                ))}
               </div>
             </div>
           </div>
