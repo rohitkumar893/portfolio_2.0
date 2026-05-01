@@ -19,11 +19,13 @@
   font-weight: 400;
 }
 
-.hero-carousel {
-  --hero-carousel-gap: 8px;
-  --hero-skill-card-size: 96px;
+.hero-skill-cloud {
   opacity: 0;
-  width: min(100%, calc((4.5 * var(--hero-skill-card-size)) + (3.5 * var(--hero-carousel-gap))));
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 7px;
+  width: min(100%, 410px);
   margin-inline: auto;
   animation-name: slideIn;
   animation-duration: 1.2s;
@@ -32,69 +34,47 @@
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-carousel-mask {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding: 6px 0;
-}
-
-.hero-carousel-mask::before,
-.hero-carousel-mask::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 56px;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.hero-carousel-mask::before {
-  left: 0;
-  background: linear-gradient(90deg, #ffffff, rgba(255, 255, 255, 0));
-}
-
-.hero-carousel-mask::after {
-  right: 0;
-  background: linear-gradient(270deg, #ffffff, rgba(255, 255, 255, 0));
-}
-
-.hero-carousel-track {
-  display: flex;
-  width: max-content;
-  gap: var(--hero-carousel-gap);
-  animation: heroCarouselScroll 26s linear infinite;
-}
-
-.hero-carousel:hover .hero-carousel-track {
-  animation-play-state: paused;
-}
-
 .hero-skill-card {
-  width: var(--hero-skill-card-size);
-  min-height: var(--hero-skill-card-size);
-  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  min-height: 62px;
+  width: 62px;
+  flex: 0 0 auto;
+  border-radius: 18px;
+  transition: transform 0.28s ease, filter 0.28s ease;
+}
+
+.hero-skill-card:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 14px 18px rgba(15, 23, 42, 0.1));
 }
 
 .hero-skill-icon {
   display: flex;
-  height: 58px;
-  width: 58px;
+  height: 52px;
+  width: 52px;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
   background: #f8fafc;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  animation: heroSkillZoom 3.6s ease-in-out infinite;
+  animation-delay: calc(var(--skill-index) * 0.6s);
+  transition: border-color 0.28s ease, background-color 0.28s ease, transform 0.28s ease;
+}
+
+.hero-skill-card:hover .hero-skill-icon {
+  border-color: #cbd5e1;
+  background: #ffffff;
+  animation-play-state: paused;
+  transform: scale(1.14);
 }
 
 .hero-skill-icon img {
-  height: 34px;
-  width: 34px;
+  height: 32px;
+  width: 32px;
   object-fit: contain;
 }
 
@@ -268,12 +248,18 @@
   }
 }
 
-@keyframes heroCarouselScroll {
-  from {
-    transform: translateX(0);
+@keyframes heroSkillZoom {
+  0%,
+  14%,
+  100% {
+    transform: scale(1);
+    border-color: #e2e8f0;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
   }
-  to {
-    transform: translateX(calc(-50% - (var(--hero-carousel-gap) / 2)));
+  7% {
+    transform: scale(1.14);
+    border-color: #cbd5e1;
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.11);
   }
 }
 
@@ -284,8 +270,9 @@
 }
 
 @media(max-width:780px){
-  .hero-carousel {
-    --hero-skill-card-size: 90px;
+  .hero-skill-cloud {
+    max-width: 340px;
+    gap: 6px;
   }
 
   .social-btn {
@@ -298,43 +285,64 @@
     width: 22px;
   }
 
-  .hero-skill-card {
-    width: 90px;
-    min-height: 90px;
-    padding: 14px;
+  .hero-skill-icon {
+    height: 48px;
+    width: 48px;
+  }
+
+  .hero-skill-icon img {
+    height: 29px;
+    width: 29px;
   }
 }
 
 @media (max-width: 640px) {
-  .hero-carousel {
-    --hero-carousel-gap: 8px;
-    --hero-skill-card-size: 82px;
-  }
-
-  .hero-carousel-mask::before,
-  .hero-carousel-mask::after {
-    width: 28px;
-  }
-
-  .hero-carousel-track {
-    animation-duration: 22s;
+  .hero-skill-cloud {
+    max-width: 316px;
+    gap: 5px;
   }
 
   .hero-skill-card {
-    width: 82px;
-    min-height: 82px;
-    padding: 12px;
-    border-radius: 18px;
+    min-height: 48px;
+    width: 48px;
   }
 
   .hero-skill-icon {
-    height: 50px;
-    width: 50px;
+    height: 42px;
+    width: 42px;
+    border-radius: 10px;
   }
 
   .hero-skill-icon img {
-    height: 30px;
-    width: 30px;
+    height: 26px;
+    width: 26px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-skill-cloud {
+    gap: 4px;
+  }
+
+  .hero-skill-card {
+    min-height: 44px;
+    width: 44px;
+  }
+
+  .hero-skill-icon {
+    height: 39px;
+    width: 39px;
+  }
+
+  .hero-skill-icon img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-skill-icon {
+    animation: none;
   }
 }
 
