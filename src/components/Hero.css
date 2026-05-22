@@ -9,8 +9,20 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at top, rgba(148, 163, 184, 0.12), transparent 42%),
+    linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at top, rgba(37, 99, 235, 0.09), transparent 36%),
     linear-gradient(180deg, rgba(248, 250, 252, 0.9), rgba(255, 255, 255, 1));
+  background-size: 44px 44px, 44px 44px, auto, auto;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 12% 8%;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 32px;
   pointer-events: none;
 }
 
@@ -19,14 +31,44 @@
   font-weight: 400;
 }
 
+.hero-tagline {
+  letter-spacing: -0.025em;
+  word-spacing: 0.08em;
+}
+
+.falling-word {
+  display: inline-block;
+  align-items: baseline;
+  color: #3178c6;
+  font-weight: 700;
+  line-height: inherit;
+  margin-inline-start: 0.05em;
+  letter-spacing: inherit;
+  white-space: nowrap;
+  transform: translateY(0.03em) rotate(-4deg);
+  transform-origin: left center;
+  vertical-align: baseline;
+}
+
+.falling-word span {
+  display: inline;
+}
+
 .hero-skill-cloud {
   opacity: 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: 4px;
-  width: min(100%, 392px);
+  gap: 6px;
+  width: fit-content;
   margin-inline: auto;
+  padding: 8px;
+  border: 1px solid rgba(203, 213, 225, 0.9);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.08);
+  position: relative;
+  backdrop-filter: blur(14px);
   animation-name: slideIn;
   animation-duration: 1.2s;
   animation-delay: 0.45s;
@@ -36,46 +78,61 @@
 
 .hero-skill-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 68px;
-  width: 68px;
+  gap: 8px;
+  min-height: 86px;
+  width: 92px;
   flex: 0 0 auto;
-  border-radius: 18px;
-  transition: transform 0.28s ease, filter 0.28s ease;
+  border-radius: 16px;
+  position: relative;
+  transition: background-color 0.28s ease, transform 0.28s ease;
+}
+
+.hero-skill-card + .hero-skill-card::before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: 18px;
+  bottom: 18px;
+  width: 1px;
+  background: rgba(203, 213, 225, 0.78);
 }
 
 .hero-skill-card:hover {
-  transform: scale(1.08);
-  filter: drop-shadow(0 14px 18px rgba(15, 23, 42, 0.1));
+  background: rgba(248, 250, 252, 0.9);
+  transform: translateY(-2px);
 }
 
 .hero-skill-icon {
   display: flex;
-  height: 58px;
-  width: 58px;
+  height: 44px;
+  width: 44px;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  border: 1px solid #e2e8f0;
-  background: #f8fafc;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-  animation: heroSkillZoom 3.6s ease-in-out infinite;
-  animation-delay: calc(var(--skill-index) * 0.6s);
-  transition: border-color 0.28s ease, background-color 0.28s ease, transform 0.28s ease;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+  transition: transform 0.28s ease;
 }
 
 .hero-skill-card:hover .hero-skill-icon {
-  border-color: #cbd5e1;
-  background: #ffffff;
-  animation-play-state: paused;
-  transform: scale(1.14);
+  transform: scale(1.04);
 }
 
 .hero-skill-icon img {
-  height: 36px;
-  width: 36px;
+  height: 30px;
+  width: 30px;
   object-fit: contain;
+}
+
+.hero-skill-card span {
+  color: #475569;
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  line-height: 1;
 }
 
 .social-links,.flex-center {
@@ -248,21 +305,6 @@
   }
 }
 
-@keyframes heroSkillZoom {
-  0%,
-  14%,
-  100% {
-    transform: scale(1);
-    border-color: #e2e8f0;
-    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-  }
-  7% {
-    transform: scale(1.14);
-    border-color: #cbd5e1;
-    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.11);
-  }
-}
-
 @media (min-width: 1024px) {
   .hero-content-wrapper {
     max-width: 58rem;
@@ -270,8 +312,12 @@
 }
 
 @media(max-width:780px){
+  .hero::after {
+    display: none;
+  }
+
   .hero-skill-cloud {
-    max-width: 324px;
+    max-width: calc(100vw - 40px);
     gap: 4px;
   }
 
@@ -286,57 +332,71 @@
   }
 
   .hero-skill-icon {
-    height: 54px;
-    width: 54px;
-  }
-
-  .hero-skill-icon img {
-    height: 33px;
-    width: 33px;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero-skill-cloud {
-    max-width: 300px;
-    gap: 3px;
-  }
-
-  .hero-skill-card {
-    min-height: 58px;
-    width: 58px;
-  }
-
-  .hero-skill-icon {
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-  }
-
-  .hero-skill-icon img {
-    height: 31px;
-    width: 31px;
-  }
-}
-
-@media (max-width: 360px) {
-  .hero-skill-cloud {
-    gap: 2px;
-  }
-
-  .hero-skill-card {
-    min-height: 52px;
-    width: 52px;
-  }
-
-  .hero-skill-icon {
-    height: 46px;
-    width: 46px;
+    height: 42px;
+    width: 42px;
   }
 
   .hero-skill-icon img {
     height: 28px;
     width: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .falling-word {
+    transform: translateY(0.02em) rotate(-3deg);
+  }
+
+  .hero-skill-cloud {
+    max-width: calc(100vw - 32px);
+    gap: 2px;
+    padding: 6px;
+  }
+
+  .hero-skill-card {
+    min-height: 76px;
+    width: 78px;
+    gap: 7px;
+  }
+
+  .hero-skill-icon {
+    height: 38px;
+    width: 38px;
+    border-radius: 11px;
+  }
+
+  .hero-skill-icon img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .hero-skill-card span {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-skill-cloud {
+    gap: 0;
+  }
+
+  .hero-skill-card {
+    min-height: 72px;
+    width: 70px;
+  }
+
+  .hero-skill-icon {
+    height: 36px;
+    width: 36px;
+  }
+
+  .hero-skill-icon img {
+    height: 23px;
+    width: 23px;
+  }
+
+  .hero-skill-card span {
+    font-size: 10px;
   }
 }
 

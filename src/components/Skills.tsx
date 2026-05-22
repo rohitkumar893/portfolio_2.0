@@ -43,11 +43,11 @@ import './Skills.css'
 
     return (
       <section
-        className="skills border-t border-slate-200 select-none w-full bg-white py-[100px] sm:py-[110px] lg:py-[120px] px-4 sm:px-8 md:px-12 lg:px-[120px] flex flex-col gap-[40px]"
+        className="skills section-surface border-t border-slate-200 select-none w-full py-[100px] sm:py-[110px] lg:py-[120px] px-4 sm:px-8 md:px-12 lg:px-[120px] flex flex-col gap-[40px]"
         id="skills"
       >
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center">
-          <p className="text-center text-[12px] sm:text-[13px] font-semibold tracking-[0.28em] text-slate-500">
+          <p className="text-center text-[12px] sm:text-[13px] font-semibold tracking-[0.28em] text-blue-500">
             CAPABILITIES
           </p>
           <h1 className="mt-4 text-center text-[32px] sm:text-[40px] font-semibold tracking-[-0.03em] text-slate-900">
@@ -66,7 +66,7 @@ import './Skills.css'
                 className="spin skill-card flex min-h-[126px] w-full flex-col rounded-[16px] px-3 py-4 sm:px-4 sm:py-5"
                 style={{ '--skill-index': i } as React.CSSProperties}
               >
-                <div className="skill-icon flex h-14 w-14 items-center justify-center rounded-[13px] bg-slate-50 border border-slate-200">
+                <div className="skill-icon flex h-14 w-14 items-center justify-center rounded-[13px] bg-blue-50/50 border border-slate-200">
                   <img src={v.imagePath} className="logo h-[34px] w-[34px] object-contain" alt={`${v.skillName} logo`} />
                 </div>
                 <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">{v.category}</p>

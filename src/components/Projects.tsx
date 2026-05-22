@@ -33,12 +33,12 @@ const projects: Project[] = [
 const Projects = () => {
   return (
     <section
-      className="w-full border-t border-slate-200 bg-slate-50 px-4 py-[96px] text-slate-900 sm:px-8 sm:py-[112px] md:px-12 lg:px-[120px] lg:py-[128px]"
+      className="section-surface w-full border-t border-slate-200 px-4 py-[96px] text-slate-900 sm:px-8 sm:py-[112px] md:px-12 lg:px-[120px] lg:py-[128px]"
       id="projects"
     >
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center">
         <div className="max-w-2xl text-center">
-          <p className="text-center text-[12px] font-semibold tracking-[0.28em] text-slate-500 sm:text-[13px]">
+          <p className="text-center text-[12px] font-semibold tracking-[0.28em] text-blue-500 sm:text-[13px]">
             FEATURED WORK
           </p>
           <h1 className="mt-4 text-center text-[32px] font-semibold tracking-[-0.04em] text-slate-900 sm:text-[40px]">
@@ -58,11 +58,11 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="group block"
             >
-              <article className="flex overflow-hidden rounded-[8px] border border-slate-200 bg-white shadow-[0_10px_24px_rgba(15,23,42,0.04)] transition-all duration-300 group-hover:-translate-y-1 group-hover:border-slate-300 group-hover:shadow-[0_16px_36px_rgba(15,23,42,0.06)]">
-                <div className="w-[34%] min-w-[34%] border-r border-slate-200 bg-white p-2.5 sm:w-[32%] sm:min-w-[32%] sm:p-3">
+              <article className="flex overflow-hidden rounded-[14px] border border-slate-200 bg-white/88 shadow-[0_14px_38px_rgba(15,23,42,0.055)] backdrop-blur-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:border-blue-200 group-hover:shadow-[0_20px_48px_rgba(15,23,42,0.08)]">
+                <div className="w-[34%] min-w-[34%] border-r border-slate-200 bg-white/70 p-2.5 sm:w-[32%] sm:min-w-[32%] sm:p-3">
                   <img
                     src={project.image}
-                    className="h-full min-h-[120px] w-full rounded-[6px] object-cover object-top transition-transform duration-500 group-hover:scale-[1.02] sm:min-h-[132px] sm:rounded-[8px]"
+                    className="h-full min-h-[120px] w-full rounded-[10px] object-cover object-top transition-transform duration-500 group-hover:scale-[1.02] sm:min-h-[132px]"
                     alt={project.name}
                   />
                 </div>
@@ -72,7 +72,7 @@ const Projects = () => {
                     <h2 className="text-[17px] font-semibold tracking-[-0.03em] text-slate-900 sm:text-[20px]">
                       {project.name}
                     </h2>
-                    <span className="shrink-0 rounded-full border border-slate-200 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500 transition-colors duration-300 group-hover:border-slate-300 group-hover:text-slate-700">
+                    <span className="shrink-0 rounded-full border border-blue-100 bg-blue-50/70 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-blue-600 transition-colors duration-300 group-hover:border-blue-200">
                       Live
                     </span>
                   </div>
@@ -85,14 +85,14 @@ const Projects = () => {
                     {project.stack.map((item) => (
                       <span
                         key={`${project.name}-${item}`}
-                        className="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-medium text-slate-700"
+                        className="rounded-full border border-slate-200 bg-white/80 px-2.5 py-1 text-[11px] font-medium text-slate-700"
                       >
                         {item}
                       </span>
                     ))}
                   </div>
 
-                  <div className="mt-4 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-900 sm:mt-5 sm:text-[12px]">
+                  <div className="mt-4 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-blue-600 sm:mt-5 sm:text-[12px]">
                     <span>View Project</span>
                     <svg
                       className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1"

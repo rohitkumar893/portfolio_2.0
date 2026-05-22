@@ -13,14 +13,9 @@ const skills = [
     category: 'Runtime',
   },
   {
-    skillName: 'Python',
-    imagePath: 'python.png',
-    category: 'Language',
-  },
-  {
-    skillName: 'React',
-    imagePath: 'react.png',
-    category: 'Library',
+    skillName: 'PostgreSQL',
+    imagePath: 'pgre.png',
+    category: 'Database',
   },
 ]
 
@@ -30,19 +25,23 @@ const Hero:React.FC = () => {
             <div className='flex w-full justify-center items-center py-16 sm:py-20 lg:py-24'>
               <div className="relative z-10 flex flex-col items-start w-full max-w-4xl hero-content-wrapper">
                 <div className="name mb-5 md:mb-6 px-2 sm:px-3 lg:px-0">
-                  <p className="mb-4 text-center lg:text-left text-[13px] sm:text-[15px] font-semibold tracking-[0.26em] text-slate-500">
-                    SOFTWARE DEVELOPER
-                  </p>
                   <h1
-                    className="text-center lg:text-left text-slate-950 text-[42px] sm:text-[56px] md:text-[60px] lg:text-[54px] xl:text-[60px] select-none font-semibold leading-[1.02] tracking-[-0.05em]"
+                    className="hero-tagline text-center text-slate-950 text-[42px] sm:text-[56px] md:text-[60px] lg:text-[54px] xl:text-[60px] select-none font-semibold leading-[1.02]"
+                    aria-label="I create systems that don't fall apart."
                   >
-                    From idea to production.
+                    I create systems
+                    <br />
+                    that don't fall{' '}
+                    <span className="falling-word" aria-hidden="true">
+                      <span>a</span>
+                      <span>p</span>
+                      <span>a</span>
+                      <span>r</span>
+                      <span>t</span>
+                    </span>
+                    <span aria-hidden="true">.</span>
                   </h1>
                 </div>
-
-                <p className='about px-2 sm:px-3 lg:px-0 text-[16px] sm:text-[22px] md:text-[24px] lg:text-[22px] w-full max-w-[760px] text-slate-600 leading-relaxed hero-description'>
-                 I focus on building systems that are clear, reliable, and easy to work with over time, keeping simplicity and maintainability in mind.
-                </p>
               <div className="links mt-6 text-center relative z-10">
                 <div className="social-links">
                     <a href="https://github.com/rohitkumar893" target="_blank" rel="noopener noreferrer">
@@ -75,6 +74,7 @@ const Hero:React.FC = () => {
                     <div className="hero-skill-icon">
                       <img src={skill.imagePath} alt={`${skill.skillName} logo`} />
                     </div>
+                    <span>{skill.skillName}</span>
                   </article>
                 ))}
               </div>
@@ -82,7 +82,7 @@ const Hero:React.FC = () => {
           </div>
 
         <div className="absolute arrow w-full flex justify-center p-0 left-0 bottom-[5%] md:bottom-[3%] z-10">
-            <a href="#projects" className="arrow-link" aria-label="Scroll to projects">
+            <a href="#experience" className="arrow-link" aria-label="Scroll to experience">
               <img src='arrow2.png' className='hidden md:block h-[56px] animate-bounce arrow-icon' alt="Scroll down" />
             </a>
         </div>
